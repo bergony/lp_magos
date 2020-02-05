@@ -1,0 +1,541 @@
+\hypertarget{classSolve}{}\section{Solve Class Reference}
+\label{classSolve}\index{Solve@{Solve}}
+
+
+{\bfseries Class} \hyperlink{classSolve}{Solve} {\itshape Class that recive a \hyperlink{classMaze}{Maze} to be \hyperlink{classSolve}{Solve}.}  
+
+
+
+
+{\ttfamily \#include $<$solve.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSolve_a3aeaf8dfa8f2bb5f8fb4ec048b9afdb9}{Solve} (\hyperlink{classMaze}{Maze} $\ast$m)
+\begin{DoxyCompactList}\small\item\em ! Constructor \hyperlink{classSolve}{Solve} \end{DoxyCompactList}\item 
+\hyperlink{classSolve_ac437f1307c9d4669205ac7d370a55ffc}{Solve} ()
+\begin{DoxyCompactList}\small\item\em ! Constructor \hyperlink{classSolve}{Solve} Default \end{DoxyCompactList}\item 
+\hyperlink{classSolve_a3435d6ff721c2d8bebf0eff2411fa93e}{$\sim$\+Solve} (void)
+\begin{DoxyCompactList}\small\item\em ! Destructors \hyperlink{classSolve}{Solve} \end{DoxyCompactList}\item 
+\hyperlink{classSolve_ac78c2c56eb847decb6efd070978a9a3d}{Solve} (const \hyperlink{classSolve}{Solve} \&clone)
+\begin{DoxyCompactList}\small\item\em ! Copy \hyperlink{classSolve}{Solve} \end{DoxyCompactList}\item 
+\hyperlink{classSolve}{Solve} \& \hyperlink{classSolve_a2c0330bee4d1cafc5b3c7d5f7ba72697}{operator=} (const \hyperlink{classSolve}{Solve} \&s)
+\begin{DoxyCompactList}\small\item\em ! Assignment operator. \end{DoxyCompactList}\item 
+bool \hyperlink{classSolve_a868db181d288fdb10e5592b62e669c3b}{is\+\_\+done} (void)
+\begin{DoxyCompactList}\small\item\em ! Method to check if the maze is Done \end{DoxyCompactList}\item 
+void \hyperlink{classSolve_a963b593c0311f03c7e4ce77eea818fa1}{get\+\_\+way} (void)
+\begin{DoxyCompactList}\small\item\em ! Method to get with way de player\+\_\+cell goes save on way stack \end{DoxyCompactList}\item 
+int \hyperlink{classSolve_aaccff68d3e175f7400a9407077db7255}{get\+\_\+way\+\_\+numb} (void)
+\begin{DoxyCompactList}\small\item\em ! Method to get numbers of posible ways \end{DoxyCompactList}\item 
+void \hyperlink{classSolve_a8902b46862c7759928495e3684054f82}{move} (void)
+\begin{DoxyCompactList}\small\item\em ! Move to the next Cell backtrack. \end{DoxyCompactList}\item 
+bool \hyperlink{classSolve_a8226032eb1d4877539f417d4fab0efde}{move\+\_\+left} (void)
+\begin{DoxyCompactList}\small\item\em ! Move to the next cell left hand. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+{\bfseries Class} \hyperlink{classSolve}{Solve} {\itshape Class that recive a \hyperlink{classMaze}{Maze} to be \hyperlink{classSolve}{Solve}.} 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSolve_a3aeaf8dfa8f2bb5f8fb4ec048b9afdb9}\label{classSolve_a3aeaf8dfa8f2bb5f8fb4ec048b9afdb9}} 
+\index{Solve@{Solve}!Solve@{Solve}}
+\index{Solve@{Solve}!Solve@{Solve}}
+\subsubsection{\texorpdfstring{Solve()}{Solve()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Solve\+::\+Solve (\begin{DoxyParamCaption}\item[{\hyperlink{classMaze}{Maze} $\ast$}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+! Constructor \hyperlink{classSolve}{Solve} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{classMaze}{Maze}} & $\ast$m Reference to a maze. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+33                        : m\_maze\{m\} 
+34         \{
+35             \textcolor{comment}{/* EMPTY */}
+36         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classSolve_ac437f1307c9d4669205ac7d370a55ffc}\label{classSolve_ac437f1307c9d4669205ac7d370a55ffc}} 
+\index{Solve@{Solve}!Solve@{Solve}}
+\index{Solve@{Solve}!Solve@{Solve}}
+\subsubsection{\texorpdfstring{Solve()}{Solve()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Solve\+::\+Solve (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+! Constructor \hyperlink{classSolve}{Solve} Default 
+
+
+\begin{DoxyCode}
+39 \{\}
+\end{DoxyCode}
+\mbox{\Hypertarget{classSolve_a3435d6ff721c2d8bebf0eff2411fa93e}\label{classSolve_a3435d6ff721c2d8bebf0eff2411fa93e}} 
+\index{Solve@{Solve}!````~Solve@{$\sim$\+Solve}}
+\index{````~Solve@{$\sim$\+Solve}!Solve@{Solve}}
+\subsubsection{\texorpdfstring{$\sim$\+Solve()}{~Solve()}}
+{\footnotesize\ttfamily Solve\+::$\sim$\+Solve (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+! Destructors \hyperlink{classSolve}{Solve} 
+
+
+\begin{DoxyCode}
+42 \{ \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classSolve_ac78c2c56eb847decb6efd070978a9a3d}\label{classSolve_ac78c2c56eb847decb6efd070978a9a3d}} 
+\index{Solve@{Solve}!Solve@{Solve}}
+\index{Solve@{Solve}!Solve@{Solve}}
+\subsubsection{\texorpdfstring{Solve()}{Solve()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Solve\+::\+Solve (\begin{DoxyParamCaption}\item[{const \hyperlink{classSolve}{Solve} \&}]{clone }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+! Copy \hyperlink{classSolve}{Solve} 
+
+
+\begin{DoxyCode}
+46         \{   
+47             m\_maze = clone.m\_maze;
+48             m\_stack\_cell = clone.m\_stack\_cell;
+49             m\_stack\_ways = clone.m\_stack\_ways;
+50             m\_cell\_player = clone.m\_cell\_player;
+51             m\_numb\_way = clone.m\_numb\_way;
+52         \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classSolve_a963b593c0311f03c7e4ce77eea818fa1}\label{classSolve_a963b593c0311f03c7e4ce77eea818fa1}} 
+\index{Solve@{Solve}!get\+\_\+way@{get\+\_\+way}}
+\index{get\+\_\+way@{get\+\_\+way}!Solve@{Solve}}
+\subsubsection{\texorpdfstring{get\+\_\+way()}{get\_way()}}
+{\footnotesize\ttfamily void Solve\+::get\+\_\+way (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+! Method to get with way de player\+\_\+cell goes save on way stack 
+
+
+\begin{DoxyCode}
+16 \{
+17     \textcolor{keywordflow}{if}( !m\_maze->\hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}( m\_cell\_player, \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1ab28354b543375bfa94dabaeda722927f}{Maze::status\_cell::top}) &&
+18             !m\_maze->\hyperlink{classMaze_a308fa695665de6217c0e7f28aab5adda}{is\_way\_up}( m\_cell\_player -  m\_maze->\hyperlink{classMaze_a8a04cd1335e96a80358181afa164d4c9}{get\_cols}() ))
+19     \{
+20         m\_stack\_ways.push(1);
+21     \}
+22     \textcolor{keywordflow}{if}( !m\_maze->\hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}( m\_cell\_player, \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1a811882fecd5c7618d7099ebbd39ea254}{Maze::status\_cell::left}) &&
+23             !m\_maze->\hyperlink{classMaze_a308fa695665de6217c0e7f28aab5adda}{is\_way\_up}( m\_cell\_player-1 ))
+24     \{
+25         m\_stack\_ways.push(2);
+26     \}
+27     \textcolor{keywordflow}{if}( !m\_maze->\hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}( m\_cell\_player, \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1a74e8333ad11685ff3bdae589c8f6e34d}{Maze::status\_cell::down}) &&
+28             !m\_maze->\hyperlink{classMaze_a308fa695665de6217c0e7f28aab5adda}{is\_way\_up}( m\_cell\_player+m\_maze->\hyperlink{classMaze_a8a04cd1335e96a80358181afa164d4c9}{get\_cols}() ))
+29     \{
+30         m\_stack\_ways.push(3);
+31     \}
+32     \textcolor{keywordflow}{if}( !m\_maze->\hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}( m\_cell\_player, \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1a7c4f29407893c334a6cb7a87bf045c0d}{Maze::status\_cell::right}) &&
+33             !m\_maze->\hyperlink{classMaze_a308fa695665de6217c0e7f28aab5adda}{is\_way\_up}( m\_cell\_player+1))
+34     \{
+35         m\_stack\_ways.push(4);
+36     \}
+37 \}
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSolve_a963b593c0311f03c7e4ce77eea818fa1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSolve_a963b593c0311f03c7e4ce77eea818fa1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSolve_aaccff68d3e175f7400a9407077db7255}\label{classSolve_aaccff68d3e175f7400a9407077db7255}} 
+\index{Solve@{Solve}!get\+\_\+way\+\_\+numb@{get\+\_\+way\+\_\+numb}}
+\index{get\+\_\+way\+\_\+numb@{get\+\_\+way\+\_\+numb}!Solve@{Solve}}
+\subsubsection{\texorpdfstring{get\+\_\+way\+\_\+numb()}{get\_way\_numb()}}
+{\footnotesize\ttfamily int Solve\+::get\+\_\+way\+\_\+numb (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+! Method to get numbers of posible ways 
+
+\begin{DoxyReturn}{Returns}
+int numbers of ways. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+39 \{
+40     m\_numb\_way = 0;
+41     \textcolor{keywordflow}{if}( !m\_maze->\hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}( m\_cell\_player, \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1ab28354b543375bfa94dabaeda722927f}{Maze::status\_cell::top}) &&
+42             !m\_maze->\hyperlink{classMaze_a308fa695665de6217c0e7f28aab5adda}{is\_way\_up}(m\_cell\_player - m\_maze->\hyperlink{classMaze_a8a04cd1335e96a80358181afa164d4c9}{get\_cols}()))
+43     \{
+44         m\_numb\_way++;
+45     \}
+46     \textcolor{keywordflow}{if}( !m\_maze->\hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}( m\_cell\_player, \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1a811882fecd5c7618d7099ebbd39ea254}{Maze::status\_cell::left}) &&
+47             !m\_maze->\hyperlink{classMaze_a308fa695665de6217c0e7f28aab5adda}{is\_way\_up}( m\_cell\_player - 1))
+48     \{
+49         m\_numb\_way++;
+50     \}
+51     \textcolor{keywordflow}{if}( !m\_maze->\hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}( m\_cell\_player, \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1a74e8333ad11685ff3bdae589c8f6e34d}{Maze::status\_cell::down}) &&
+52             !m\_maze->\hyperlink{classMaze_a308fa695665de6217c0e7f28aab5adda}{is\_way\_up}( m\_cell\_player + m\_maze->\hyperlink{classMaze_a8a04cd1335e96a80358181afa164d4c9}{get\_cols}()))
+53     \{
+54         m\_numb\_way++;
+55     \}
+56     \textcolor{keywordflow}{if}( !m\_maze->\hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}( m\_cell\_player, \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1a7c4f29407893c334a6cb7a87bf045c0d}{Maze::status\_cell::right}) &&
+57             !m\_maze->\hyperlink{classMaze_a308fa695665de6217c0e7f28aab5adda}{is\_way\_up}( m\_cell\_player + 1))
+58     \{
+59         m\_numb\_way++;
+60     \}
+61     \textcolor{keywordflow}{return} m\_numb\_way;
+62 \}
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSolve_aaccff68d3e175f7400a9407077db7255_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSolve_aaccff68d3e175f7400a9407077db7255_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSolve_a868db181d288fdb10e5592b62e669c3b}\label{classSolve_a868db181d288fdb10e5592b62e669c3b}} 
+\index{Solve@{Solve}!is\+\_\+done@{is\+\_\+done}}
+\index{is\+\_\+done@{is\+\_\+done}!Solve@{Solve}}
+\subsubsection{\texorpdfstring{is\+\_\+done()}{is\_done()}}
+{\footnotesize\ttfamily bool Solve\+::is\+\_\+done (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+! Method to check if the maze is Done 
+
+\begin{DoxyReturn}{Returns}
+True if the Cell Player are the last one. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+5 \{
+6     \textcolor{keywordflow}{if}( m\_cell\_player == m\_maze->\hyperlink{classMaze_a90f5c1c140a9991942204d4a7fec3bf8}{get\_numb\_cell}()-1 )
+7     \{
+8 
+9         m\_maze->\hyperlink{classMaze_aa7c832a91a3db8f48b31f688332f8986}{set\_cell\_up}( m\_cell\_player , \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1ac83b72dd001482ce10f0b106c7a0ed0e}{Maze::status\_cell::way} );
+10         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+11     \}
+12     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+13 \}
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSolve_a868db181d288fdb10e5592b62e669c3b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSolve_a868db181d288fdb10e5592b62e669c3b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSolve_a8902b46862c7759928495e3684054f82}\label{classSolve_a8902b46862c7759928495e3684054f82}} 
+\index{Solve@{Solve}!move@{move}}
+\index{move@{move}!Solve@{Solve}}
+\subsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Solve\+::move (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+! Move to the next Cell backtrack. 
+
+
+\begin{DoxyCode}
+65 \{
+66     \textcolor{keywordflow}{if}(\hyperlink{classSolve_aaccff68d3e175f7400a9407077db7255}{get\_way\_numb}() > 0 )
+67     \{
+68         \hyperlink{classSolve_a963b593c0311f03c7e4ce77eea818fa1}{get\_way}();
+69         m\_stack\_cell.push(m\_cell\_player);
+70         m\_maze->\hyperlink{classMaze_aa7c832a91a3db8f48b31f688332f8986}{set\_cell\_up}( m\_stack\_cell.top() , 
+      \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1ac83b72dd001482ce10f0b106c7a0ed0e}{Maze::status\_cell::way} );
+71 
+72         \textcolor{keywordflow}{if}(m\_stack\_ways.top() == 1)
+73         \{
+74             m\_cell\_player -= m\_maze->\hyperlink{classMaze_a8a04cd1335e96a80358181afa164d4c9}{get\_cols}();
+75             m\_stack\_ways.pop();
+76 
+77         \}
+78         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(m\_stack\_ways.top() == 2)
+79         \{
+80             m\_cell\_player -= 1;
+81             m\_stack\_ways.pop();
+82         \}
+83         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(m\_stack\_ways.top() == 3)
+84         \{
+85             m\_cell\_player += m\_maze->\hyperlink{classMaze_a8a04cd1335e96a80358181afa164d4c9}{get\_cols}();
+86             m\_stack\_ways.pop();
+87 
+88         \}
+89         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(m\_stack\_ways.top() == 4)
+90         \{
+91             m\_cell\_player += 1;
+92             m\_stack\_ways.pop();
+93         \}
+94     \}
+95     \textcolor{keywordflow}{else}
+96     \{
+97 
+98         m\_maze->\hyperlink{classMaze_aa7c832a91a3db8f48b31f688332f8986}{set\_cell\_up}( m\_cell\_player, 
+      \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1a94708897ec9db8647dfe695714c98e46}{Maze::status\_cell::discarded} );
+99         \textcolor{keywordflow}{if}( m\_maze->\hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}( m\_cell\_player, \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1ac83b72dd001482ce10f0b106c7a0ed0e}{Maze::status\_cell::way}))
+100         \{
+101             m\_maze->\hyperlink{classMaze_ab86292a84aa56a26c4c07f4aa684d9bb}{set\_cell\_down}(m\_cell\_player, 
+      \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1ac83b72dd001482ce10f0b106c7a0ed0e}{Maze::status\_cell::way});
+102         \}
+103         m\_cell\_player = m\_stack\_cell.top();
+104         m\_stack\_cell.pop();
+105         \textcolor{keywordflow}{while}( m\_stack\_ways.empty() )
+106         \{
+107             m\_stack\_ways.pop();
+108         \}
+109     \}
+110 
+111 \}
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSolve_a8902b46862c7759928495e3684054f82_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSolve_a8902b46862c7759928495e3684054f82_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSolve_a8226032eb1d4877539f417d4fab0efde}\label{classSolve_a8226032eb1d4877539f417d4fab0efde}} 
+\index{Solve@{Solve}!move\+\_\+left@{move\+\_\+left}}
+\index{move\+\_\+left@{move\+\_\+left}!Solve@{Solve}}
+\subsubsection{\texorpdfstring{move\+\_\+left()}{move\_left()}}
+{\footnotesize\ttfamily bool Solve\+::move\+\_\+left (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+! Move to the next cell left hand. 
+
+if Left hand have wall and front wall is not up and cell in front is not way and not discarted. 
+\begin{DoxyCode}
+114 \{
+115     \textcolor{keywordflow}{switch} (front)
+116     \{
+117         \textcolor{keywordflow}{case} 1:
+118             \textcolor{keywordflow}{if}( m\_maze->\hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}( m\_cell\_player, 
+      \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1a811882fecd5c7618d7099ebbd39ea254}{Maze::status\_cell::left} ) &&
+119                     !m\_maze->\hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}( m\_cell\_player, 
+      \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1ab28354b543375bfa94dabaeda722927f}{Maze::status\_cell::top}) &&
+120                     !m\_maze->\hyperlink{classMaze_a308fa695665de6217c0e7f28aab5adda}{is\_way\_up}( m\_cell\_player - m\_maze->
+      \hyperlink{classMaze_a8a04cd1335e96a80358181afa164d4c9}{get\_cols}() ))
+121             \{
+122                 Turners = 0;
+123                 m\_maze->\hyperlink{classMaze_aa7c832a91a3db8f48b31f688332f8986}{set\_cell\_up}( m\_cell\_player , 
+      \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1ac83b72dd001482ce10f0b106c7a0ed0e}{Maze::status\_cell::way} );
+124                 m\_cell\_player -= m\_maze->\hyperlink{classMaze_a8a04cd1335e96a80358181afa164d4c9}{get\_cols}();
+125                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+126             \}
+127             \textcolor{keywordflow}{else}
+128             \{
+129                 \textcolor{keywordflow}{if}( !m\_maze->\hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}( m\_cell\_player, 
+      \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1a811882fecd5c7618d7099ebbd39ea254}{Maze::status\_cell::left} )) 
+130                 \{
+131                     Turners = 0;
+132                     front = 4;
+133                     hand = 3;
+134                     m\_maze->\hyperlink{classMaze_aa7c832a91a3db8f48b31f688332f8986}{set\_cell\_up}( m\_cell\_player , 
+      \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1ac83b72dd001482ce10f0b106c7a0ed0e}{Maze::status\_cell::way} );
+135                     m\_cell\_player -= 1;
+136                     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+137                 \}
+138                 \textcolor{keywordflow}{else}
+139                 \{
+140                     Turners++;
+141                     front = 2;
+142                     hand = 1;
+143                 \}
+144                 \textcolor{keywordflow}{break};
+145             \}
+146 
+147         \textcolor{keywordflow}{case} 2:
+148             \textcolor{keywordflow}{if}( m\_maze->\hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}( m\_cell\_player, 
+      \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1ab28354b543375bfa94dabaeda722927f}{Maze::status\_cell::top} ) &&
+149                     !m\_maze->\hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}( m\_cell\_player, 
+      \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1a7c4f29407893c334a6cb7a87bf045c0d}{Maze::status\_cell::right}) && 
+150                     !m\_maze->\hyperlink{classMaze_a308fa695665de6217c0e7f28aab5adda}{is\_way\_up}( m\_cell\_player+1 ))
+151             \{
+152                 Turners = 0;
+153                 m\_maze->\hyperlink{classMaze_aa7c832a91a3db8f48b31f688332f8986}{set\_cell\_up}( m\_cell\_player , 
+      \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1ac83b72dd001482ce10f0b106c7a0ed0e}{Maze::status\_cell::way} );
+154                 m\_cell\_player += 1;
+155                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+156             \}
+157             \textcolor{keywordflow}{else}
+158             \{
+159                 \textcolor{keywordflow}{if}( !m\_maze->\hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}( m\_cell\_player, 
+      \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1ab28354b543375bfa94dabaeda722927f}{Maze::status\_cell::top} ))
+160                 \{
+161                     Turners = 0;
+162                     front = 1;
+163                     hand = 4;
+164                     m\_maze->\hyperlink{classMaze_aa7c832a91a3db8f48b31f688332f8986}{set\_cell\_up}( m\_cell\_player , 
+      \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1ac83b72dd001482ce10f0b106c7a0ed0e}{Maze::status\_cell::way} );
+165                     m\_cell\_player -= m\_maze->\hyperlink{classMaze_a8a04cd1335e96a80358181afa164d4c9}{get\_cols}();
+166                     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+167                 \}
+168                 \textcolor{keywordflow}{else}
+169                 \{
+170                     Turners++;
+171                     front = 3;
+172                     hand = 2;
+173                 \}
+174                 \textcolor{keywordflow}{break};
+175             \}
+176         \textcolor{keywordflow}{case} 3:
+177             \textcolor{keywordflow}{if}(     m\_maze->\hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}( m\_cell\_player, 
+      \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1a7c4f29407893c334a6cb7a87bf045c0d}{Maze::status\_cell::right} ) &&
+178                     !m\_maze->\hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}( m\_cell\_player, 
+      \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1a74e8333ad11685ff3bdae589c8f6e34d}{Maze::status\_cell::down}) &&
+179                     !m\_maze->\hyperlink{classMaze_a308fa695665de6217c0e7f28aab5adda}{is\_way\_up}( m\_cell\_player+m\_maze->\hyperlink{classMaze_a8a04cd1335e96a80358181afa164d4c9}{get\_cols}() ))
+180             \{
+181                 Turners = 0;
+182                 m\_maze->\hyperlink{classMaze_aa7c832a91a3db8f48b31f688332f8986}{set\_cell\_up}( m\_cell\_player , 
+      \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1ac83b72dd001482ce10f0b106c7a0ed0e}{Maze::status\_cell::way} );
+183                 m\_cell\_player += m\_maze->\hyperlink{classMaze_a8a04cd1335e96a80358181afa164d4c9}{get\_cols}();
+184                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+185             \}
+186             \textcolor{keywordflow}{else}
+187             \{
+188 
+189                 \textcolor{keywordflow}{if}( !m\_maze->\hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}( m\_cell\_player, 
+      \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1a7c4f29407893c334a6cb7a87bf045c0d}{Maze::status\_cell::right} ))
+190                 \{
+191                     Turners = 0;
+192                     front = 2;
+193                     hand = 1;
+194                     m\_maze->\hyperlink{classMaze_aa7c832a91a3db8f48b31f688332f8986}{set\_cell\_up}( m\_cell\_player , 
+      \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1ac83b72dd001482ce10f0b106c7a0ed0e}{Maze::status\_cell::way} );
+195                     m\_cell\_player += 1;
+196                     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+197                 \}
+198                 \textcolor{keywordflow}{else}
+199                 \{
+200                     Turners++;
+201                     front = 4;
+202                     hand = 3;
+203                 \}
+204                 \textcolor{keywordflow}{break};
+205             \}
+206 
+207         \textcolor{keywordflow}{case} 4:
+209             \textcolor{keywordflow}{if}(     m\_maze->\hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}( m\_cell\_player, 
+      \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1a74e8333ad11685ff3bdae589c8f6e34d}{Maze::status\_cell::down} ) &&
+210                     !m\_maze->\hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}( m\_cell\_player, 
+      \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1a811882fecd5c7618d7099ebbd39ea254}{Maze::status\_cell::left}) &&
+211                     !m\_maze->\hyperlink{classMaze_a308fa695665de6217c0e7f28aab5adda}{is\_way\_up}( m\_cell\_player-1))
+212             \{
+213                 Turners = 0;
+214                 m\_maze->\hyperlink{classMaze_aa7c832a91a3db8f48b31f688332f8986}{set\_cell\_up}( m\_cell\_player , 
+      \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1ac83b72dd001482ce10f0b106c7a0ed0e}{Maze::status\_cell::way} );
+215                 m\_cell\_player -= 1;
+216                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+217             \}\textcolor{keywordflow}{else}
+218             \{
+219                 \textcolor{comment}{// if not have wall on left.}
+220                 \textcolor{keywordflow}{if}( !m\_maze->\hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}( m\_cell\_player, 
+      \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1a74e8333ad11685ff3bdae589c8f6e34d}{Maze::status\_cell::down}))
+221                 \{
+222                     Turners = 0;
+223                     front = 3;
+224                     hand = 2;
+225                     m\_maze->\hyperlink{classMaze_aa7c832a91a3db8f48b31f688332f8986}{set\_cell\_up}( m\_cell\_player , 
+      \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1ac83b72dd001482ce10f0b106c7a0ed0e}{Maze::status\_cell::way} );
+226                     m\_cell\_player += m\_maze->\hyperlink{classMaze_a8a04cd1335e96a80358181afa164d4c9}{get\_cols}();
+227                     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+228                 \}
+229                 \textcolor{keywordflow}{else}
+230                 \{
+231                     Turners++;
+232                     front = 1;
+233                     hand = 4;
+234                 \}
+235                 \textcolor{keywordflow}{break};
+236             \}
+237     \}
+238 
+239     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+240 \}
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSolve_a8226032eb1d4877539f417d4fab0efde_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSolve_a8226032eb1d4877539f417d4fab0efde_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSolve_a2c0330bee4d1cafc5b3c7d5f7ba72697}\label{classSolve_a2c0330bee4d1cafc5b3c7d5f7ba72697}} 
+\index{Solve@{Solve}!operator=@{operator=}}
+\index{operator=@{operator=}!Solve@{Solve}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{classSolve}{Solve}\& Solve\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classSolve}{Solve} \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+! Assignment operator. 
+
+
+\begin{DoxyCode}
+56         \{
+57             this->m\_maze = s.m\_maze;
+58             this->m\_stack\_cell = s.m\_stack\_cell;
+59             this->m\_stack\_ways = s.m\_stack\_ways;
+60             this->m\_cell\_player = s.m\_cell\_player;
+61             this->m\_numb\_way = s.m\_numb\_way;
+62 
+63             \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+64         \}
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSolve_a2c0330bee4d1cafc5b3c7d5f7ba72697_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/bergony/lp\+\_\+magos/include/\hyperlink{solve_8h}{solve.\+h}\item 
+/home/bergony/lp\+\_\+magos/src/\hyperlink{solve_8cpp}{solve.\+cpp}\end{DoxyCompactItemize}

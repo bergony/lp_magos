@@ -1,0 +1,12 @@
+<map id="Maze::find_cell" name="Maze::find_cell">
+<area shape="rect" id="node2" href="$classMaze.html#aa7c832a91a3db8f48b31f688332f8986" title="Method to change bit corresponding status cell to one. " alt="" coords="177,5,305,32"/>
+<area shape="rect" id="node3" href="$classMaze.html#ab86292a84aa56a26c4c07f4aa684d9bb" title="Method to change bit corresponding status cell to zero. " alt="" coords="169,56,314,83"/>
+<area shape="rect" id="node4" href="$classMaze.html#ae07191c6ec3cc47fce1147bc3f03a8ad" title="Method to see all status of cell. " alt="" coords="188,107,295,133"/>
+<area shape="rect" id="node5" href="$classMaze.html#a2b0e69e72d6c3e1037578f057946a21e" title="Method to check if the status cell sc is up. " alt="" coords="367,169,487,196"/>
+<area shape="rect" id="node6" href="$classMaze.html#a308fa695665de6217c0e7f28aab5adda" title="Method to check if the cell have be see. " alt="" coords="179,232,303,259"/>
+<area shape="rect" id="node7" href="$classMaze.html#a8a04cd1335e96a80358181afa164d4c9" title="Method to get numbers of colums. " alt="" coords="186,283,297,309"/>
+<area shape="rect" id="node8" href="$classMaze.html#ac786606a34632b2254b2d27d5f5f0f3f" title="Method to get numbers of rows. " alt="" coords="184,333,299,360"/>
+<area shape="rect" id="node9" href="$classMaze.html#a90f5c1c140a9991942204d4a7fec3bf8" title="Method to get numbers of cell. " alt="" coords="168,384,315,411"/>
+<area shape="rect" id="node10" href="$classMaze.html#a152979999dd4c75014d65bf6deb5a00c" title="Maze::get_maze_done" alt="" coords="164,435,319,461"/>
+<area shape="rect" id="node11" href="$classMaze.html#ab31ce10f6d3dfdd64d15c7b48f93ed63" title="Maze::set_maze_done" alt="" coords="164,485,319,512"/>
+</map>

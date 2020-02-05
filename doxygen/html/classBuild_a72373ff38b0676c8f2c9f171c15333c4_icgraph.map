@@ -1,0 +1,9 @@
+<map id="Build::done" name="Build::done">
+<area shape="rect" id="node2" href="$classBuild.html#a72dbb04928303d0b90d003cb90d85550" title="! Assignment operator. " alt="" coords="151,5,265,32"/>
+<area shape="rect" id="node3" href="$classGame__Loop.html#a549ad971281e15afa38a5dc204843891" title="! Method to make one move on build or solve if is not done.) " alt="" coords="330,107,469,133"/>
+<area shape="rect" id="node6" href="$classGame__Loop.html#a5048bf3b3b18b529fe1e4a474282f274" title="! Method to render the maze in a image PNG on folder. " alt="" coords="140,56,276,83"/>
+<area shape="rect" id="node8" href="$classGame__Loop.html#a197233063165098c509b47d9b1da3a36" title="! Method to check if the maze is build, solve or did some error. " alt="" coords="335,157,463,184"/>
+<area shape="rect" id="node4" href="$classGame__Loop.html#a874fb59c1f7dc60273fc5541046838b9" title="! Destructors Canvas " alt="" coords="523,56,701,83"/>
+<area shape="rect" id="node5" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="587,107,637,133"/>
+<area shape="rect" id="node7" href="$classGame__Loop.html#a637d18a3f2c22b5ecd4c3f1905e52b88" title="! Method to check if the param are and set Maze m to status default. " alt="" coords="324,56,475,83"/>
+</map>

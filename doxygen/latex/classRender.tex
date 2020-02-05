@@ -1,0 +1,303 @@
+\hypertarget{classRender}{}\section{Render Class Reference}
+\label{classRender}\index{Render@{Render}}
+
+
+{\bfseries Class} \hyperlink{classRender}{Render} {\itshape A class that recive \hyperlink{classMaze}{Maze} Object to draw in the \hyperlink{classCanvas}{Canvas}.}  
+
+
+
+
+{\ttfamily \#include $<$render.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRender_a6e41bd186a63bf1852209ef34ea3d357}{Render} (\hyperlink{classMaze}{Maze} $\ast$m, int w=0, int h=0)
+\begin{DoxyCompactList}\small\item\em ! Constructor \hyperlink{classRender}{Render} \end{DoxyCompactList}\item 
+\hyperlink{classRender_ab0f4b917605cb15902f8d045a4197faf}{$\sim$\+Render} ()
+\begin{DoxyCompactList}\small\item\em ! Destructors \hyperlink{classCanvas}{Canvas} \end{DoxyCompactList}\item 
+\hyperlink{classRender_a034f7ab9a411cf3d6d379c27d4fe8115}{Render} (const \hyperlink{classRender}{Render} \&clone)
+\begin{DoxyCompactList}\small\item\em ! Copy \hyperlink{classCanvas}{Canvas}. \end{DoxyCompactList}\item 
+\hyperlink{classRender}{Render} \& \hyperlink{classRender_aeb62fc4c9d0a068daa1c848039bf7e6e}{operator=} (const \hyperlink{classRender}{Render} \&r)
+\begin{DoxyCompactList}\small\item\em ! Assignment operator. \end{DoxyCompactList}\item 
+void \hyperlink{classRender_a67e9fdbd6725960fd59d6350e8cd17cc}{draw} (std\+::string s)
+\begin{DoxyCompactList}\small\item\em Method to draw the \hyperlink{classCanvas}{Canvas}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+{\bfseries Class} \hyperlink{classRender}{Render} {\itshape A class that recive \hyperlink{classMaze}{Maze} Object to draw in the \hyperlink{classCanvas}{Canvas}.} 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRender_a6e41bd186a63bf1852209ef34ea3d357}\label{classRender_a6e41bd186a63bf1852209ef34ea3d357}} 
+\index{Render@{Render}!Render@{Render}}
+\index{Render@{Render}!Render@{Render}}
+\subsubsection{\texorpdfstring{Render()}{Render()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Render\+::\+Render (\begin{DoxyParamCaption}\item[{\hyperlink{classMaze}{Maze} $\ast$}]{m,  }\item[{int}]{w = {\ttfamily 0},  }\item[{int}]{h = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+! Constructor \hyperlink{classRender}{Render} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & $\ast$M Reference to \hyperlink{classMaze}{Maze}. \\
+\hline
+{\em int} & w width of Image. \\
+\hline
+{\em int} & h height of Image. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+27                                                 : m\_maze\{m\}, m\_cell\_width\{w\}, m\_cell\_height\{h\}, m\_canvas\{ w
+       , h \}
+28         \{
+29             m\_cell\_width = (w-40) / m\_maze->\hyperlink{classMaze_a8a04cd1335e96a80358181afa164d4c9}{get\_cols}();
+30             m\_cell\_height = (h-40) / m\_maze->\hyperlink{classMaze_ac786606a34632b2254b2d27d5f5f0f3f}{get\_rows}();
+31         \}
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{classRender_a6e41bd186a63bf1852209ef34ea3d357_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classRender_ab0f4b917605cb15902f8d045a4197faf}\label{classRender_ab0f4b917605cb15902f8d045a4197faf}} 
+\index{Render@{Render}!````~Render@{$\sim$\+Render}}
+\index{````~Render@{$\sim$\+Render}!Render@{Render}}
+\subsubsection{\texorpdfstring{$\sim$\+Render()}{~Render()}}
+{\footnotesize\ttfamily Render\+::$\sim$\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+! Destructors \hyperlink{classCanvas}{Canvas} 
+
+
+\begin{DoxyCode}
+34 \{ \textcolor{comment}{/* EMPTY */} \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classRender_a034f7ab9a411cf3d6d379c27d4fe8115}\label{classRender_a034f7ab9a411cf3d6d379c27d4fe8115}} 
+\index{Render@{Render}!Render@{Render}}
+\index{Render@{Render}!Render@{Render}}
+\subsubsection{\texorpdfstring{Render()}{Render()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Render\+::\+Render (\begin{DoxyParamCaption}\item[{const \hyperlink{classRender}{Render} \&}]{clone }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+! Copy \hyperlink{classCanvas}{Canvas}. 
+
+
+\begin{DoxyCode}
+38         \{
+39             m\_maze = clone.m\_maze;
+40             m\_cell\_width = clone.m\_cell\_width;
+41             m\_cell\_height = clone.m\_cell\_width;
+42             m\_canvas = clone.m\_canvas;
+43         \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classRender_a67e9fdbd6725960fd59d6350e8cd17cc}\label{classRender_a67e9fdbd6725960fd59d6350e8cd17cc}} 
+\index{Render@{Render}!draw@{draw}}
+\index{draw@{draw}!Render@{Render}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Render\+::draw (\begin{DoxyParamCaption}\item[{std\+::string}]{s }\end{DoxyParamCaption})}
+
+
+
+Method to draw the \hyperlink{classCanvas}{Canvas}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::string} & s name of string output. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+15 \{
+16     m\_canvas.\hyperlink{classCanvas_a0205269b201aed71f21b8f613cd66333}{clear}( \hyperlink{render_8cpp_a009fdb656a368e46b7d614e7438b5830}{GRAY} );     \textcolor{comment}{// Clear the canvas.}
+17 
+18     \textcolor{keyword}{const} \textcolor{keywordtype}{char} *word = &s.at(0); \textcolor{comment}{// point begin of word}
+19 
+20     \textcolor{keywordtype}{int} off\_set\_width = m\_cell\_width - ( m\_cell\_width * 95 ) / 100;      \textcolor{comment}{//Distance of lines}
+21     \textcolor{keywordtype}{int} off\_set\_height = m\_cell\_height - ( m\_cell\_height * 95 ) / 100;   \textcolor{comment}{//Distance of lines}
+22 
+23     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i\{0\}, y\{0\}; i < ( m\_maze->\hyperlink{classMaze_ac786606a34632b2254b2d27d5f5f0f3f}{get\_rows}() * m\_cell\_height ); y++, i += m\_cell\_height )
+24     \{
+25         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j\{0\}, x\{0\}; j < ( m\_maze->\hyperlink{classMaze_a8a04cd1335e96a80358181afa164d4c9}{get\_cols}() * m\_cell\_width );x++, j += m\_cell\_width )
+26         \{
+27             \textcolor{comment}{//Draw top line.}
+28             \textcolor{keywordflow}{if}(y == 0 || ( m\_maze->\hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}(y , x, 
+      \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1ab28354b543375bfa94dabaeda722927f}{Maze::status\_cell::top}) && m\_maze->\hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}(y-1,x,
+      \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1a74e8333ad11685ff3bdae589c8f6e34d}{Maze::status\_cell::down}) ) )
+29             \{
+30                 m\_canvas.\hyperlink{classCanvas_a3095d5ff2670c5dc9939454198865ceb}{hline}( 20+j , 20+i , m\_cell\_width, \hyperlink{render_8cpp_ada1558ae37a1ddfc6c8b784f809385d4}{BLACK});
+31             \}
+32 
+33             \textcolor{comment}{//Draw Left line.}
+34             \textcolor{keywordflow}{if}(x == 0 || ( m\_maze->\hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}(y, x, 
+      \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1a811882fecd5c7618d7099ebbd39ea254}{Maze::status\_cell::left}) && m\_maze->\hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}(y,x-1,
+      \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1a7c4f29407893c334a6cb7a87bf045c0d}{Maze::status\_cell::right}) ) )
+35             \{
+36                 m\_canvas.\hyperlink{classCanvas_af81ae19142bc132665e053ce5de15211}{vline}(20+j , 20+i , m\_cell\_height, \hyperlink{render_8cpp_ada1558ae37a1ddfc6c8b784f809385d4}{BLACK});
+37             \}
+38 
+39             \textcolor{comment}{//Draw a yellow box if is way.}
+40             \textcolor{keywordflow}{if}( m\_maze->\hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}(y , x, \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1ac83b72dd001482ce10f0b106c7a0ed0e}{Maze::status\_cell::way}) )
+41             \{
+42                 m\_canvas.\hyperlink{classCanvas_a6e1c6baa6fb92cd3de1726b67b51aa38}{box}(off\_set\_width+j, off\_set\_height+i, m\_cell\_height-(off\_set\_height*2), 
+      m\_cell\_width-(off\_set\_width*2), \hyperlink{render_8cpp_a0616d169807ac93a808a3928d058d2d5}{YELLOW});         
+43             \}
+44 
+45             \textcolor{comment}{//Draw a red box if is discarde.}
+46             \textcolor{keywordflow}{if}( m\_maze->\hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}(y , x, \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1a94708897ec9db8647dfe695714c98e46}{Maze::status\_cell::discarded}
+      ) )
+47             \{
+48                 m\_canvas.\hyperlink{classCanvas_a6e1c6baa6fb92cd3de1726b67b51aa38}{box}(off\_set\_width+j, off\_set\_height+i, m\_cell\_height-(off\_set\_height*2), 
+      m\_cell\_width-(off\_set\_width*2), \hyperlink{render_8cpp_a0db58550f21b0b45458ade7d071c3500}{RED});         
+49             \}
+50 
+51             \textcolor{comment}{//Draw the way to Top if true.}
+52             \textcolor{keywordflow}{if}( m\_maze->\hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}(y , x, \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1ac83b72dd001482ce10f0b106c7a0ed0e}{Maze::status\_cell::way}) &&  
+      m\_maze->\hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}(y-1 , x, \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1ac83b72dd001482ce10f0b106c7a0ed0e}{Maze::status\_cell::way}) && !m\_maze->
+      \hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}( y, x,\hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1ab28354b543375bfa94dabaeda722927f}{Maze::status\_cell::top} ) )
+53             \{
+54                 m\_canvas.\hyperlink{classCanvas_a6e1c6baa6fb92cd3de1726b67b51aa38}{box}(off\_set\_width+j, i, m\_cell\_height-(off\_set\_height*2), m\_cell\_width-(
+      off\_set\_width*2), \hyperlink{render_8cpp_a0616d169807ac93a808a3928d058d2d5}{YELLOW});         
+55             \}
+56             \textcolor{comment}{//Draw the way to Left is true.}
+57             \textcolor{keywordflow}{if}( m\_maze->\hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}(y , x, \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1ac83b72dd001482ce10f0b106c7a0ed0e}{Maze::status\_cell::way}) &&  
+      m\_maze->\hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}(y , x-1, \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1ac83b72dd001482ce10f0b106c7a0ed0e}{Maze::status\_cell::way}) && !m\_maze->
+      \hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}( y, x,\hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1a811882fecd5c7618d7099ebbd39ea254}{Maze::status\_cell::left}))
+58             \{
+59                 m\_canvas.\hyperlink{classCanvas_a6e1c6baa6fb92cd3de1726b67b51aa38}{box}(j, off\_set\_height+i, m\_cell\_height-(off\_set\_height*2), m\_cell\_width-(
+      off\_set\_width*2), \hyperlink{render_8cpp_a0616d169807ac93a808a3928d058d2d5}{YELLOW});
+60             \}
+61             \textcolor{comment}{//Draw the way to Down if true.}
+62             \textcolor{keywordflow}{if}( m\_maze->\hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}(y , x, \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1ac83b72dd001482ce10f0b106c7a0ed0e}{Maze::status\_cell::way}) &&  
+      m\_maze->\hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}(y+1 , x, \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1ac83b72dd001482ce10f0b106c7a0ed0e}{Maze::status\_cell::way}) && !m\_maze->
+      \hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}( y, x,\hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1a74e8333ad11685ff3bdae589c8f6e34d}{Maze::status\_cell::down}))
+63             \{
+64                 m\_canvas.\hyperlink{classCanvas_a6e1c6baa6fb92cd3de1726b67b51aa38}{box}(off\_set\_width+j, off\_set\_height+i, m\_cell\_height, m\_cell\_width-(
+      off\_set\_width*2), \hyperlink{render_8cpp_a0616d169807ac93a808a3928d058d2d5}{YELLOW});         
+65             \}
+66             \textcolor{comment}{//Draw the way to right if true.}
+67             \textcolor{keywordflow}{if}( m\_maze->\hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}(y , x, \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1ac83b72dd001482ce10f0b106c7a0ed0e}{Maze::status\_cell::way}) &&  
+      m\_maze->\hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}(y , x+1, \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1ac83b72dd001482ce10f0b106c7a0ed0e}{Maze::status\_cell::way}) && !m\_maze->
+      \hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}( y, x,\hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1a7c4f29407893c334a6cb7a87bf045c0d}{Maze::status\_cell::right}))
+68             \{
+69                 m\_canvas.\hyperlink{classCanvas_a6e1c6baa6fb92cd3de1726b67b51aa38}{box}(off\_set\_width+j, off\_set\_height+i, m\_cell\_height-(off\_set\_height*2), 
+      m\_cell\_width, \hyperlink{render_8cpp_a0616d169807ac93a808a3928d058d2d5}{YELLOW});         
+70             \}
+71             \textcolor{comment}{//Draw the Discarde to top if true.}
+72             \textcolor{keywordflow}{if}( m\_maze->\hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}(y , x, \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1a94708897ec9db8647dfe695714c98e46}{Maze::status\_cell::discarded}
+      ) &&  m\_maze->\hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}(y-1 , x, \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1a94708897ec9db8647dfe695714c98e46}{Maze::status\_cell::discarded}) && !
+      m\_maze->\hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}( y, x,\hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1ab28354b543375bfa94dabaeda722927f}{Maze::status\_cell::top}))
+73             \{
+74                 m\_canvas.\hyperlink{classCanvas_a6e1c6baa6fb92cd3de1726b67b51aa38}{box}(off\_set\_width+j, i, m\_cell\_height-(off\_set\_height*2), m\_cell\_width-(
+      off\_set\_width*2), \hyperlink{render_8cpp_a0db58550f21b0b45458ade7d071c3500}{RED});         
+75             \}
+76             \textcolor{comment}{//Draw the Discarde to left if true.}
+77             \textcolor{keywordflow}{if}( m\_maze->\hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}(y , x, \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1a94708897ec9db8647dfe695714c98e46}{Maze::status\_cell::discarded}
+      ) &&  m\_maze->\hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}(y , x-1, \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1a94708897ec9db8647dfe695714c98e46}{Maze::status\_cell::discarded}) && !
+      m\_maze->\hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}( y, x,\hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1a811882fecd5c7618d7099ebbd39ea254}{Maze::status\_cell::left}))
+78             \{
+79                 m\_canvas.\hyperlink{classCanvas_a6e1c6baa6fb92cd3de1726b67b51aa38}{box}(j, off\_set\_height+i, m\_cell\_height-(off\_set\_height*2), m\_cell\_width-(
+      off\_set\_width*2), \hyperlink{render_8cpp_a0db58550f21b0b45458ade7d071c3500}{RED});         
+80             \}
+81             \textcolor{comment}{//Draw the Discarde to down if true.}
+82             \textcolor{keywordflow}{if}( m\_maze->\hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}(y , x, \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1a94708897ec9db8647dfe695714c98e46}{Maze::status\_cell::discarded}
+      ) &&  m\_maze->\hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}(y+1 , x, \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1a94708897ec9db8647dfe695714c98e46}{Maze::status\_cell::discarded}) && !
+      m\_maze->\hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}( y, x,\hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1a74e8333ad11685ff3bdae589c8f6e34d}{Maze::status\_cell::down}))
+83             \{
+84                 m\_canvas.\hyperlink{classCanvas_a6e1c6baa6fb92cd3de1726b67b51aa38}{box}(off\_set\_width+j, off\_set\_height+i, m\_cell\_height, m\_cell\_width-(
+      off\_set\_width*2), \hyperlink{render_8cpp_a0db58550f21b0b45458ade7d071c3500}{RED});         
+85             \}
+86             \textcolor{comment}{//Draw the Discarde to right if true.}
+87             \textcolor{keywordflow}{if}( m\_maze->\hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}(y , x, \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1a94708897ec9db8647dfe695714c98e46}{Maze::status\_cell::discarded}
+      ) &&  m\_maze->\hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}(y , x+1, \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1a94708897ec9db8647dfe695714c98e46}{Maze::status\_cell::discarded}) && !
+      m\_maze->\hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}( y, x,\hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1a7c4f29407893c334a6cb7a87bf045c0d}{Maze::status\_cell::right}))
+88             \{
+89                 m\_canvas.\hyperlink{classCanvas_a6e1c6baa6fb92cd3de1726b67b51aa38}{box}(off\_set\_width+j, off\_set\_height+i, m\_cell\_height-(off\_set\_height*2), 
+      m\_cell\_width, \hyperlink{render_8cpp_a0db58550f21b0b45458ade7d071c3500}{RED});         
+90             \}
+91             \textcolor{comment}{//Draw the exit box Green.}
+92             \textcolor{keywordflow}{if}( m\_maze->\hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}(y , x, \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1af24f62eeb789199b9b2e467df3b1876b}{Maze::status\_cell::exit}) )
+93             \{
+94                 m\_canvas.\hyperlink{classCanvas_a6e1c6baa6fb92cd3de1726b67b51aa38}{box}((off\_set\_width*2)+j, (off\_set\_height*2)+i, m\_cell\_height-(off\_set\_height*4)
+      , m\_cell\_width-(off\_set\_width*4), \hyperlink{render_8cpp_a58d827358f6165cc5927d28b2dcff311}{GREEN});         
+95             \}
+96             \textcolor{comment}{//Draw the Entrace Box Blue.}
+97             \textcolor{keywordflow}{if}( m\_maze->\hyperlink{classMaze_a2b0e69e72d6c3e1037578f057946a21e}{is\_cell\_up}(y , x, \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1a31f57c97180bdc320a97370c71cf524a}{Maze::status\_cell::entrace}) )
+98             \{
+99                 m\_canvas.\hyperlink{classCanvas_a6e1c6baa6fb92cd3de1726b67b51aa38}{box}((off\_set\_width*2)+j, (off\_set\_height*2)+i, m\_cell\_height-(off\_set\_height*4)
+      , m\_cell\_width-(off\_set\_width*4), \hyperlink{render_8cpp_ab49b84fe87ce8b46e7e4a25be82c7538}{BLUE});         
+100             \}
+101         \}
+102         \textcolor{comment}{//Draw Right Line.}
+103         m\_canvas.\hyperlink{classCanvas_af81ae19142bc132665e053ce5de15211}{vline}(20+(m\_cell\_width * m\_maze->\hyperlink{classMaze_a8a04cd1335e96a80358181afa164d4c9}{get\_cols}()), 20+i , m\_cell\_height , 
+      \hyperlink{render_8cpp_ada1558ae37a1ddfc6c8b784f809385d4}{BLACK});
+104     \}
+105     \textcolor{comment}{//Draw Down line.}
+106     m\_canvas.\hyperlink{classCanvas_a3095d5ff2670c5dc9939454198865ceb}{hline}(20, 20+(m\_cell\_height*m\_maze->\hyperlink{classMaze_ac786606a34632b2254b2d27d5f5f0f3f}{get\_rows}() ), m\_cell\_width * m\_maze->
+      \hyperlink{classMaze_a8a04cd1335e96a80358181afa164d4c9}{get\_cols}() + 1, \hyperlink{render_8cpp_ada1558ae37a1ddfc6c8b784f809385d4}{BLACK});
+107 
+108     stbi\_write\_png\_compression\_level = 0;    \textcolor{comment}{// defaults to 8; set to higher for more compression}
+109     stbi\_write\_png( word,            \textcolor{comment}{// file name}
+110             m\_canvas.\hyperlink{classCanvas_a8478392f133ddaf1c9b7272a301c7898}{get\_w}(), m\_canvas.\hyperlink{classCanvas_ab26c7ab91a0a9069895285a314bc8418}{get\_h}(),           \textcolor{comment}{// image dimensions}
+111             3,                              \textcolor{comment}{// # of channels per pixel}
+112             m\_canvas.\hyperlink{classCanvas_aa9f9b173d57058ea827a0134c937d0e1}{get\_p}(),                      \textcolor{comment}{// the pixels}
+113             m\_canvas.\hyperlink{classCanvas_a8478392f133ddaf1c9b7272a301c7898}{get\_w}()* 3);                 \textcolor{comment}{// length of a row (in bytes), see above.}
+114 
+115 \}
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRender_a67e9fdbd6725960fd59d6350e8cd17cc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRender_a67e9fdbd6725960fd59d6350e8cd17cc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classRender_aeb62fc4c9d0a068daa1c848039bf7e6e}\label{classRender_aeb62fc4c9d0a068daa1c848039bf7e6e}} 
+\index{Render@{Render}!operator=@{operator=}}
+\index{operator=@{operator=}!Render@{Render}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{classRender}{Render}\& Render\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classRender}{Render} \&}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+! Assignment operator. 
+
+
+\begin{DoxyCode}
+47         \{
+48             this->m\_maze = r.m\_maze;
+49             this->m\_cell\_width = r.m\_cell\_width;
+50             this->m\_cell\_height = r.m\_cell\_width;
+51             this->m\_canvas = r.m\_canvas;
+52 
+53             \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+54         \}
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRender_aeb62fc4c9d0a068daa1c848039bf7e6e_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/bergony/lp\+\_\+magos/include/\hyperlink{render_8h}{render.\+h}\item 
+/home/bergony/lp\+\_\+magos/src/\hyperlink{render_8cpp}{render.\+cpp}\end{DoxyCompactItemize}

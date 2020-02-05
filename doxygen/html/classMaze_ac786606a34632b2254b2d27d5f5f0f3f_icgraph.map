@@ -1,0 +1,25 @@
+<map id="Maze::get_rows" name="Maze::get_rows">
+<area shape="rect" id="node2" href="$classMaze.html#aa59b935dcd5f7129636cea6e40882c56" title="Method to find the cell on vector by coordinates( x, y). " alt="" coords="170,245,281,271"/>
+<area shape="rect" id="node3" href="$classBuild.html#ada5111f265ee6a43832db25e8da9c3d0" title="Method add Cell to lab. " alt="" coords="543,491,633,518"/>
+<area shape="rect" id="node22" href="$classRender.html#a67e9fdbd6725960fd59d6350e8cd17cc" title="Method to draw the Canvas. " alt="" coords="538,415,638,442"/>
+<area shape="rect" id="node24" href="$classRender.html#a6e41bd186a63bf1852209ef34ea3d357" title="! Constructor Render " alt="" coords="168,542,283,569"/>
+<area shape="rect" id="node8" href="$classMaze.html#aa7c832a91a3db8f48b31f688332f8986" title="Method to change bit corresponding status cell to one. " alt="" coords="524,245,652,271"/>
+<area shape="rect" id="node16" href="$classMaze.html#ab86292a84aa56a26c4c07f4aa684d9bb" title="Method to change bit corresponding status cell to zero. " alt="" coords="331,307,476,334"/>
+<area shape="rect" id="node17" href="$classMaze.html#ae07191c6ec3cc47fce1147bc3f03a8ad" title="Method to see all status of cell. " alt="" coords="350,81,457,107"/>
+<area shape="rect" id="node18" href="$classMaze.html#a2b0e69e72d6c3e1037578f057946a21e" title="Method to check if the status cell sc is up. " alt="" coords="343,182,463,209"/>
+<area shape="rect" id="node4" href="$classBuild.html#a72dbb04928303d0b90d003cb90d85550" title="! Assignment operator. " alt="" coords="718,599,833,626"/>
+<area shape="rect" id="node5" href="$classGame__Loop.html#a549ad971281e15afa38a5dc204843891" title="! Method to make one move on build or solve if is not done.) " alt="" coords="1089,321,1227,347"/>
+<area shape="rect" id="node6" href="$classGame__Loop.html#a874fb59c1f7dc60273fc5541046838b9" title="! Destructors Canvas " alt="" coords="1281,422,1460,449"/>
+<area shape="rect" id="node7" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="1345,371,1396,398"/>
+<area shape="rect" id="node9" href="$classGame__Loop.html#a637d18a3f2c22b5ecd4c3f1905e52b88" title="! Method to check if the param are and set Maze m to status default. " alt="" coords="1083,422,1233,449"/>
+<area shape="rect" id="node10" href="$classSolve.html#a868db181d288fdb10e5592b62e669c3b" title="! Method to check if the maze is Done " alt="" coords="721,346,829,373"/>
+<area shape="rect" id="node14" href="$classSolve.html#a8902b46862c7759928495e3684054f82" title="! Move to the next Cell backtrack. " alt="" coords="919,219,1014,246"/>
+<area shape="rect" id="node15" href="$classSolve.html#a8226032eb1d4877539f417d4fab0efde" title="! Move to the next cell left hand. " alt="" coords="715,143,835,170"/>
+<area shape="rect" id="node11" href="$classSolve.html#a2c0330bee4d1cafc5b3c7d5f7ba72697" title="! Assignment operator. " alt="" coords="1099,118,1217,145"/>
+<area shape="rect" id="node12" href="$classGame__Loop.html#a5048bf3b3b18b529fe1e4a474282f274" title="! Method to render the maze in a image PNG on folder. " alt="" coords="899,523,1035,550"/>
+<area shape="rect" id="node13" href="$classGame__Loop.html#a197233063165098c509b47d9b1da3a36" title="! Method to check if the maze is build, solve or did some error. " alt="" coords="1094,371,1222,398"/>
+<area shape="rect" id="node19" href="$classMaze.html#a308fa695665de6217c0e7f28aab5adda" title="Method to check if the cell have be see. " alt="" coords="526,42,650,69"/>
+<area shape="rect" id="node20" href="$classSolve.html#a963b593c0311f03c7e4ce77eea818fa1" title="! Method to get with way de player_cell goes save on way stack " alt="" coords="719,22,831,49"/>
+<area shape="rect" id="node21" href="$classSolve.html#aaccff68d3e175f7400a9407077db7255" title="! Method to get numbers of posible ways " alt="" coords="700,79,851,106"/>
+<area shape="rect" id="node23" href="$classRender.html#aeb62fc4c9d0a068daa1c848039bf7e6e" title="! Assignment operator. " alt="" coords="712,447,839,474"/>
+</map>

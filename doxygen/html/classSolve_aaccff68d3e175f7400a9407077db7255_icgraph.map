@@ -1,0 +1,7 @@
+<map id="Solve::get_way_numb" name="Solve::get_way_numb">
+<area shape="rect" id="node2" href="$classSolve.html#a2c0330bee4d1cafc5b3c7d5f7ba72697" title="! Assignment operator. " alt="" coords="357,5,475,32"/>
+<area shape="rect" id="node3" href="$classSolve.html#a8902b46862c7759928495e3684054f82" title="! Move to the next Cell backtrack. " alt="" coords="204,56,299,83"/>
+<area shape="rect" id="node4" href="$classGame__Loop.html#a549ad971281e15afa38a5dc204843891" title="! Method to make one move on build or solve if is not done.) " alt="" coords="347,56,485,83"/>
+<area shape="rect" id="node5" href="$classGame__Loop.html#a874fb59c1f7dc60273fc5541046838b9" title="! Destructors Canvas " alt="" coords="533,31,712,57"/>
+<area shape="rect" id="node6" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="597,81,648,108"/>
+</map>

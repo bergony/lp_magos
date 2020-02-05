@@ -1,0 +1,9 @@
+<map id="Canvas::box" name="Canvas::box">
+<area shape="rect" id="node2" href="$classRender.html#a67e9fdbd6725960fd59d6350e8cd17cc" title="Method to draw the Canvas. " alt="" coords="149,31,249,57"/>
+<area shape="rect" id="node3" href="$classRender.html#aeb62fc4c9d0a068daa1c848039bf7e6e" title="! Assignment operator. " alt="" coords="302,5,429,32"/>
+<area shape="rect" id="node4" href="$classGame__Loop.html#a5048bf3b3b18b529fe1e4a474282f274" title="! Method to render the maze in a image PNG on folder. " alt="" coords="297,56,433,83"/>
+<area shape="rect" id="node5" href="$classGame__Loop.html#a874fb59c1f7dc60273fc5541046838b9" title="! Destructors Canvas " alt="" coords="680,56,859,83"/>
+<area shape="rect" id="node6" href="$classGame__Loop.html#a637d18a3f2c22b5ecd4c3f1905e52b88" title="! Method to check if the param are and set Maze m to status default. " alt="" coords="481,107,632,133"/>
+<area shape="rect" id="node8" href="$classGame__Loop.html#a549ad971281e15afa38a5dc204843891" title="! Method to make one move on build or solve if is not done.) " alt="" coords="487,56,626,83"/>
+<area shape="rect" id="node7" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="744,107,795,133"/>
+</map>

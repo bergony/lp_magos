@@ -1,0 +1,9 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$classCanvas.html#a0205269b201aed71f21b8f613cd66333" title="Printer the full Canvas with a Color param. " alt="" coords="108,5,211,32"/>
+<area shape="rect" id="node3" href="$classCanvas.html#a2c48ae14857e22f617a6dabbdf3d42fb" title="Printer the lab. " alt="" coords="113,56,205,83"/>
+<area shape="rect" id="node6" href="$classCanvas.html#a8478392f133ddaf1c9b7272a301c7898" title="Method to get_w wight of the Canvas. " alt="" coords="104,107,215,133"/>
+<area shape="rect" id="node7" href="$classCanvas.html#ab26c7ab91a0a9069895285a314bc8418" title="Method to get_h height of the Canvas. " alt="" coords="106,157,213,184"/>
+<area shape="rect" id="node8" href="$classCanvas.html#aa9f9b173d57058ea827a0134c937d0e1" title="Method to get_p Point of the begin Canvas. " alt="" coords="106,208,213,235"/>
+<area shape="rect" id="node4" href="$classCanvas.html#af81ae19142bc132665e053ce5de15211" title="Printer a Vertical line. " alt="" coords="263,31,365,57"/>
+<area shape="rect" id="node5" href="$classCanvas.html#a3095d5ff2670c5dc9939454198865ceb" title="Printer a Horizontal line. " alt="" coords="263,81,365,108"/>
+</map>

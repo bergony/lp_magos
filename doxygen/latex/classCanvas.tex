@@ -1,0 +1,408 @@
+\hypertarget{classCanvas}{}\section{Canvas Class Reference}
+\label{classCanvas}\index{Canvas@{Canvas}}
+
+
+{\bfseries Class} \hyperlink{classCanvas}{Canvas} {\itshape Class to creates a \hyperlink{classCanvas}{Canvas} to be draw( Line and Box ).}  
+
+
+
+
+{\ttfamily \#include $<$canvas.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCanvas_aa232b6ded8df451736a9e042e103c4e2}{Canvas} (int w=0, int h=0)
+\begin{DoxyCompactList}\small\item\em ! Constructor \hyperlink{classCanvas}{Canvas} \end{DoxyCompactList}\item 
+\hyperlink{classCanvas_a63c450c44bae6e3ff76a07ad0a15a750}{$\sim$\+Canvas} (void)
+\begin{DoxyCompactList}\small\item\em ! Destructors \hyperlink{classCanvas}{Canvas} \end{DoxyCompactList}\item 
+\hyperlink{classCanvas_afcffecf500f90749912bfe626eba9acc}{Canvas} (const \hyperlink{classCanvas}{Canvas} \&clone)
+\begin{DoxyCompactList}\small\item\em ! Copy \hyperlink{classCanvas}{Canvas}. \end{DoxyCompactList}\item 
+\hyperlink{classCanvas}{Canvas} \& \hyperlink{classCanvas_a2b44607cedf966c39c1e7c2b4abcb880}{operator=} (const \hyperlink{classCanvas}{Canvas} \&c)
+\begin{DoxyCompactList}\small\item\em ! Assignment operator. \end{DoxyCompactList}\item 
+int \hyperlink{classCanvas_a8478392f133ddaf1c9b7272a301c7898}{get\+\_\+w} (void) const
+\begin{DoxyCompactList}\small\item\em Method to get width of the \hyperlink{classCanvas}{Canvas}. \end{DoxyCompactList}\item 
+int \hyperlink{classCanvas_ab26c7ab91a0a9069895285a314bc8418}{get\+\_\+h} (void) const
+\begin{DoxyCompactList}\small\item\em Method to get height of the \hyperlink{classCanvas}{Canvas}. \end{DoxyCompactList}\item 
+\hyperlink{canvas_8h_a0c8186d9b9b7880309c27230bbb5e69d}{byte} $\ast$ \hyperlink{classCanvas_aa9f9b173d57058ea827a0134c937d0e1}{get\+\_\+p} (void) const
+\begin{DoxyCompactList}\small\item\em Method to get the Point of the begin \hyperlink{classCanvas}{Canvas}. \end{DoxyCompactList}\item 
+void \hyperlink{classCanvas_a0205269b201aed71f21b8f613cd66333}{clear} (\hyperlink{structColor}{Color} color)
+\begin{DoxyCompactList}\small\item\em Printer the full \hyperlink{classCanvas}{Canvas} with a \hyperlink{structColor}{Color} param. \end{DoxyCompactList}\item 
+void \hyperlink{classCanvas_a3095d5ff2670c5dc9939454198865ceb}{hline} (const int \&x, const int \&y, const int \&w, \hyperlink{structColor}{Color} color)
+\begin{DoxyCompactList}\small\item\em Printer a Horizontal line. \end{DoxyCompactList}\item 
+void \hyperlink{classCanvas_af81ae19142bc132665e053ce5de15211}{vline} (const int \&x, const int \&y, const int \&h, \hyperlink{structColor}{Color} color)
+\begin{DoxyCompactList}\small\item\em Printer a Vertical line. \end{DoxyCompactList}\item 
+void \hyperlink{classCanvas_a6e1c6baa6fb92cd3de1726b67b51aa38}{box} (const int \&x, const int \&y, const int \&w, const int \&h, \hyperlink{structColor}{Color} color)
+\begin{DoxyCompactList}\small\item\em Printer a Box. \end{DoxyCompactList}\item 
+void \hyperlink{classCanvas_aa189a705135fb14f427747084763143a}{pixel} (const int \&x, const int \&y, \hyperlink{structColor}{Color} color)
+\begin{DoxyCompactList}\small\item\em Printer a single pixel on canvs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+{\bfseries Class} \hyperlink{classCanvas}{Canvas} {\itshape Class to creates a \hyperlink{classCanvas}{Canvas} to be draw( Line and Box ).} 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCanvas_aa232b6ded8df451736a9e042e103c4e2}\label{classCanvas_aa232b6ded8df451736a9e042e103c4e2}} 
+\index{Canvas@{Canvas}!Canvas@{Canvas}}
+\index{Canvas@{Canvas}!Canvas@{Canvas}}
+\subsubsection{\texorpdfstring{Canvas()}{Canvas()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Canvas\+::\+Canvas (\begin{DoxyParamCaption}\item[{int}]{w = {\ttfamily 0},  }\item[{int}]{h = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+! Constructor \hyperlink{classCanvas}{Canvas} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & w Witdh of Image. \\
+\hline
+{\em int} & h Height of Image . \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+37                                        :
+38             m\_width\{w\}, m\_height\{h\},
+39             m\_pixels\{ \textcolor{keyword}{new} \hyperlink{canvas_8h_a0c8186d9b9b7880309c27230bbb5e69d}{byte}[ h * w *3 ] \}
+40         \{
+41             \textcolor{comment}{/* EMPTY */}
+42         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classCanvas_a63c450c44bae6e3ff76a07ad0a15a750}\label{classCanvas_a63c450c44bae6e3ff76a07ad0a15a750}} 
+\index{Canvas@{Canvas}!````~Canvas@{$\sim$\+Canvas}}
+\index{````~Canvas@{$\sim$\+Canvas}!Canvas@{Canvas}}
+\subsubsection{\texorpdfstring{$\sim$\+Canvas()}{~Canvas()}}
+{\footnotesize\ttfamily Canvas\+::$\sim$\+Canvas (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+! Destructors \hyperlink{classCanvas}{Canvas} 
+
+
+\begin{DoxyCode}
+46         \{
+47             \textcolor{keyword}{delete} m\_pixels;
+48         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classCanvas_afcffecf500f90749912bfe626eba9acc}\label{classCanvas_afcffecf500f90749912bfe626eba9acc}} 
+\index{Canvas@{Canvas}!Canvas@{Canvas}}
+\index{Canvas@{Canvas}!Canvas@{Canvas}}
+\subsubsection{\texorpdfstring{Canvas()}{Canvas()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Canvas\+::\+Canvas (\begin{DoxyParamCaption}\item[{const \hyperlink{classCanvas}{Canvas} \&}]{clone }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+! Copy \hyperlink{classCanvas}{Canvas}. 
+
+
+\begin{DoxyCode}
+52         \{
+53             m\_width = clone.m\_width;
+54             m\_height = clone.m\_height;
+55             \hyperlink{canvas_8h_a0c8186d9b9b7880309c27230bbb5e69d}{byte} * ptr\{ \textcolor{keyword}{new} \hyperlink{canvas_8h_a0c8186d9b9b7880309c27230bbb5e69d}{byte}[m\_width*m\_height*3]\};
+56             *ptr = *clone.m\_pixels;
+57         \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classCanvas_a6e1c6baa6fb92cd3de1726b67b51aa38}\label{classCanvas_a6e1c6baa6fb92cd3de1726b67b51aa38}} 
+\index{Canvas@{Canvas}!box@{box}}
+\index{box@{box}!Canvas@{Canvas}}
+\subsubsection{\texorpdfstring{box()}{box()}}
+{\footnotesize\ttfamily void Canvas\+::box (\begin{DoxyParamCaption}\item[{const int \&}]{x,  }\item[{const int \&}]{y,  }\item[{const int \&}]{w,  }\item[{const int \&}]{h,  }\item[{\hyperlink{structColor}{Color}}]{color }\end{DoxyParamCaption})}
+
+
+
+Printer a Box. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & int \& x coordinate X on box. \\
+\hline
+{\em const} & int \& y coordiante Y on box. \\
+\hline
+{\em const} & int \& w width( S\+I\+Z\+E ) of box. \\
+\hline
+{\em const} & int \& h height( S\+I\+Z\+E ) of box. \\
+\hline
+{\em \hyperlink{structColor}{Color}} & color color chosen to fill the box \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+38 \{
+39     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i\{0\}; i < w ; i++ )
+40     \{
+41         \hyperlink{classCanvas_a3095d5ff2670c5dc9939454198865ceb}{hline}( 20 + x , 20+y+i, h, color );
+42     \}
+43 \}
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCanvas_a6e1c6baa6fb92cd3de1726b67b51aa38_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCanvas_a6e1c6baa6fb92cd3de1726b67b51aa38_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCanvas_a0205269b201aed71f21b8f613cd66333}\label{classCanvas_a0205269b201aed71f21b8f613cd66333}} 
+\index{Canvas@{Canvas}!clear@{clear}}
+\index{clear@{clear}!Canvas@{Canvas}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void Canvas\+::clear (\begin{DoxyParamCaption}\item[{\hyperlink{structColor}{Color}}]{color }\end{DoxyParamCaption})}
+
+
+
+Printer the full \hyperlink{classCanvas}{Canvas} with a \hyperlink{structColor}{Color} param. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{structColor}{Color}} & color chosen to fill the \hyperlink{classCanvas}{Canvas}. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+12 \{
+13     \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i\{0\}; i <= ( m\_width * m\_height * 3 ); i+=3 )
+14     \{
+15         m\_pixels[i] = color.\hyperlink{structColor_ada1526285d388ff4b13e1af8d7e3ad44}{chanels}[0];
+16         m\_pixels[i+1] = color.\hyperlink{structColor_ada1526285d388ff4b13e1af8d7e3ad44}{chanels}[1];
+17         m\_pixels[i+2] = color.\hyperlink{structColor_ada1526285d388ff4b13e1af8d7e3ad44}{chanels}[2];
+18     \}
+19 \}
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCanvas_a0205269b201aed71f21b8f613cd66333_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCanvas_ab26c7ab91a0a9069895285a314bc8418}\label{classCanvas_ab26c7ab91a0a9069895285a314bc8418}} 
+\index{Canvas@{Canvas}!get\+\_\+h@{get\+\_\+h}}
+\index{get\+\_\+h@{get\+\_\+h}!Canvas@{Canvas}}
+\subsubsection{\texorpdfstring{get\+\_\+h()}{get\_h()}}
+{\footnotesize\ttfamily int Canvas\+::get\+\_\+h (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Method to get height of the \hyperlink{classCanvas}{Canvas}. 
+
+\begin{DoxyReturn}{Returns}
+int value of height 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+7 \{ \textcolor{keywordflow}{return} m\_height; \}
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCanvas_ab26c7ab91a0a9069895285a314bc8418_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCanvas_aa9f9b173d57058ea827a0134c937d0e1}\label{classCanvas_aa9f9b173d57058ea827a0134c937d0e1}} 
+\index{Canvas@{Canvas}!get\+\_\+p@{get\+\_\+p}}
+\index{get\+\_\+p@{get\+\_\+p}!Canvas@{Canvas}}
+\subsubsection{\texorpdfstring{get\+\_\+p()}{get\_p()}}
+{\footnotesize\ttfamily \hyperlink{canvas_8h_a0c8186d9b9b7880309c27230bbb5e69d}{byte} $\ast$ Canvas\+::get\+\_\+p (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Method to get the Point of the begin \hyperlink{classCanvas}{Canvas}. 
+
+\begin{DoxyReturn}{Returns}
+A Point to a byte( Unsigned char ) 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+9 \{ \textcolor{keywordflow}{return} m\_pixels; \}
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCanvas_aa9f9b173d57058ea827a0134c937d0e1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCanvas_a8478392f133ddaf1c9b7272a301c7898}\label{classCanvas_a8478392f133ddaf1c9b7272a301c7898}} 
+\index{Canvas@{Canvas}!get\+\_\+w@{get\+\_\+w}}
+\index{get\+\_\+w@{get\+\_\+w}!Canvas@{Canvas}}
+\subsubsection{\texorpdfstring{get\+\_\+w()}{get\_w()}}
+{\footnotesize\ttfamily int Canvas\+::get\+\_\+w (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Method to get width of the \hyperlink{classCanvas}{Canvas}. 
+
+\begin{DoxyReturn}{Returns}
+int value of width 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+5 \{ \textcolor{keywordflow}{return} m\_width; \}
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCanvas_a8478392f133ddaf1c9b7272a301c7898_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCanvas_a3095d5ff2670c5dc9939454198865ceb}\label{classCanvas_a3095d5ff2670c5dc9939454198865ceb}} 
+\index{Canvas@{Canvas}!hline@{hline}}
+\index{hline@{hline}!Canvas@{Canvas}}
+\subsubsection{\texorpdfstring{hline()}{hline()}}
+{\footnotesize\ttfamily void Canvas\+::hline (\begin{DoxyParamCaption}\item[{const int \&}]{x,  }\item[{const int \&}]{y,  }\item[{const int \&}]{w,  }\item[{\hyperlink{structColor}{Color}}]{color }\end{DoxyParamCaption})}
+
+
+
+Printer a Horizontal line. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & int \& x coordinate X on \hyperlink{classCanvas}{Canvas}. \\
+\hline
+{\em const} & int \& y coordiante Y on \hyperlink{classCanvas}{Canvas}. \\
+\hline
+{\em const} & int \& w width( S\+I\+Z\+E ) of line. \\
+\hline
+{\em \hyperlink{structColor}{Color}} & color color chosen to fill the line \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+22 \{
+23     \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i\{0\}; i < w; i++ )
+24     \{
+25         \hyperlink{classCanvas_aa189a705135fb14f427747084763143a}{pixel}( x+i , y,color );
+26     \}
+27 \}
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{classCanvas_a3095d5ff2670c5dc9939454198865ceb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCanvas_a3095d5ff2670c5dc9939454198865ceb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCanvas_a2b44607cedf966c39c1e7c2b4abcb880}\label{classCanvas_a2b44607cedf966c39c1e7c2b4abcb880}} 
+\index{Canvas@{Canvas}!operator=@{operator=}}
+\index{operator=@{operator=}!Canvas@{Canvas}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{classCanvas}{Canvas}\& Canvas\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classCanvas}{Canvas} \&}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+! Assignment operator. 
+
+
+\begin{DoxyCode}
+61         \{
+62             this->m\_width = c.m\_width;
+63             this->m\_height = c.m\_height;
+64             \hyperlink{canvas_8h_a0c8186d9b9b7880309c27230bbb5e69d}{byte} *ptr\{ \textcolor{keyword}{new} \hyperlink{canvas_8h_a0c8186d9b9b7880309c27230bbb5e69d}{byte}[m\_width * m\_height * 3]\};
+65             *ptr = *c.m\_pixels;
+66 
+67             \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+68         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classCanvas_aa189a705135fb14f427747084763143a}\label{classCanvas_aa189a705135fb14f427747084763143a}} 
+\index{Canvas@{Canvas}!pixel@{pixel}}
+\index{pixel@{pixel}!Canvas@{Canvas}}
+\subsubsection{\texorpdfstring{pixel()}{pixel()}}
+{\footnotesize\ttfamily void Canvas\+::pixel (\begin{DoxyParamCaption}\item[{const int \&}]{x,  }\item[{const int \&}]{y,  }\item[{\hyperlink{structColor}{Color}}]{color }\end{DoxyParamCaption})}
+
+
+
+Printer a single pixel on canvs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & int \& x coordinate X on box. \\
+\hline
+{\em const} & int \& y coordiante Y on box. \\
+\hline
+{\em \hyperlink{structColor}{Color}} & color color chosen to fill the box \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+45 \{
+46     m\_pixels[ ( y*m\_width*3 ) + x*3 ] = color.\hyperlink{structColor_ada1526285d388ff4b13e1af8d7e3ad44}{chanels}[0];
+47     m\_pixels[ ( y*m\_width*3 ) + x*3 +1] = color.\hyperlink{structColor_ada1526285d388ff4b13e1af8d7e3ad44}{chanels}[1];
+48     m\_pixels[ ( y*m\_width*3 ) + x*3 +2] = color.\hyperlink{structColor_ada1526285d388ff4b13e1af8d7e3ad44}{chanels}[2];   
+49 \}
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCanvas_aa189a705135fb14f427747084763143a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCanvas_af81ae19142bc132665e053ce5de15211}\label{classCanvas_af81ae19142bc132665e053ce5de15211}} 
+\index{Canvas@{Canvas}!vline@{vline}}
+\index{vline@{vline}!Canvas@{Canvas}}
+\subsubsection{\texorpdfstring{vline()}{vline()}}
+{\footnotesize\ttfamily void Canvas\+::vline (\begin{DoxyParamCaption}\item[{const int \&}]{x,  }\item[{const int \&}]{y,  }\item[{const int \&}]{h,  }\item[{\hyperlink{structColor}{Color}}]{color }\end{DoxyParamCaption})}
+
+
+
+Printer a Vertical line. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & int \& x coordinate X on \hyperlink{classCanvas}{Canvas}. \\
+\hline
+{\em const} & int \& y coordiante Y on \hyperlink{classCanvas}{Canvas}. \\
+\hline
+{\em const} & int \& h height( S\+I\+Z\+E ) of line. \\
+\hline
+{\em \hyperlink{structColor}{Color}} & color color chosen to fill the line \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+30 \{
+31     \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i\{0\}; i < h; i++ )
+32     \{
+33         \hyperlink{classCanvas_aa189a705135fb14f427747084763143a}{pixel}( x, y+i , color );
+34     \}
+35 \}
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{classCanvas_af81ae19142bc132665e053ce5de15211_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCanvas_af81ae19142bc132665e053ce5de15211_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/bergony/lp\+\_\+magos/include/\hyperlink{canvas_8h}{canvas.\+h}\item 
+/home/bergony/lp\+\_\+magos/src/\hyperlink{canvas_8cpp}{canvas.\+cpp}\end{DoxyCompactItemize}

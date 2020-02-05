@@ -1,0 +1,95 @@
+\hypertarget{main_8cpp}{}\section{/home/bergony/lp\+\_\+magos/src/main.cpp File Reference}
+\label{main_8cpp}\index{/home/bergony/lp\+\_\+magos/src/main.\+cpp@{/home/bergony/lp\+\_\+magos/src/main.\+cpp}}
+{\ttfamily \#include \char`\"{}../include/game\+\_\+loop.\+h\char`\"{}}\newline
+Include dependency graph for main.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}\label{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{main.\+cpp@{main.\+cpp}!main@{main}}
+\index{main@{main}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+This is a \hyperlink{main_8cpp}{main.\+cpp} file here will be
+
+place the Game\+Loop and the game.
+
+\begin{DoxyAuthor}{Author}
+Bergony Bandeira
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/12/2018
+\end{DoxyDate}
+
+\begin{DoxyCode}
+40 \{
+41 
+43 
+52     \textcolor{keywordtype}{int} cols\{3\};            \textcolor{comment}{//   Default Value.}
+53     \textcolor{keywordtype}{int} rows\{3\};            \textcolor{comment}{//   Default Value.}
+54     \textcolor{keywordtype}{int} width\{100\};         \textcolor{comment}{//   Default Value.}
+55     \textcolor{keywordtype}{int} height\{100\};        \textcolor{comment}{//   Default Value.}
+56 
+57     \textcolor{keywordflow}{switch} (argc)
+58     \{
+59         \textcolor{keywordflow}{case} 1:
+60             std::cout << \textcolor{stringliteral}{"wrong argument numbers\(\backslash\)n"};
+61             \textcolor{keywordflow}{return} -1;
+62         \textcolor{keywordflow}{case} 2:
+63             std::cout << \textcolor{stringliteral}{"wrong argument numbers\(\backslash\)n"};
+64             \textcolor{keywordflow}{return} -1;
+65         \textcolor{keywordflow}{case} 3:
+66             std::cout << \textcolor{stringliteral}{"wrong argument numbers\(\backslash\)n"};
+67             \textcolor{keywordflow}{return} -1;
+68         \textcolor{keywordflow}{case} 4:
+69             rows = atoi(argv[1]);
+70             cols = atoi(argv[2]);
+71             width = atoi(argv[3]);
+72             height = (cols * width) / rows;
+73             \textcolor{keywordflow}{break};
+74         \textcolor{keywordflow}{case} 5:
+75             rows = atoi(argv[1]);
+76             cols = atoi(argv[2]);
+77             width = atoi(argv[3]);
+78             height = atoi(argv[4]);
+79             \textcolor{keywordflow}{break};
+80         \textcolor{keywordflow}{default}:
+81             \textcolor{keywordflow}{break};
+82     \}
+83 
+84     std::cout << \textcolor{stringliteral}{"============================ MAze Generator SOlve ================================"} << \textcolor{stringliteral}{"
+      \(\backslash\)n"};
+85     std::cout << \textcolor{stringliteral}{"Canvas Size "} << width << \textcolor{stringliteral}{" x "} << height << \textcolor{stringliteral}{"\(\backslash\)n"};
+86     std::cout << \textcolor{stringliteral}{"Maze Size "} << rows << \textcolor{stringliteral}{" x "} << cols << \textcolor{stringliteral}{"\(\backslash\)n"};
+87     \hyperlink{classGame__Loop}{Game\_Loop} gl( rows, cols, width, height );
+88 
+89     gl.initializer();
+90 
+91     \textcolor{keywordflow}{while}(!gl.done())
+92     \{
+93         gl.update();
+94     \}
+95 
+96     \textcolor{keywordflow}{return} 0;
+97 
+98 \}
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_cgraph}
+\end{center}
+\end{figure}

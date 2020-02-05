@@ -1,0 +1,338 @@
+\hypertarget{classGame__Loop}{}\section{Game\+\_\+\+Loop Class Reference}
+\label{classGame__Loop}\index{Game\+\_\+\+Loop@{Game\+\_\+\+Loop}}
+
+
+{\bfseries Class} Game\+\_\+loop {\itshape Class to control output. input and end of game.}  
+
+
+
+
+{\ttfamily \#include $<$game\+\_\+loop.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGame__Loop_a3aaa9f78b2e3bd3711a0552e161d94e4}{Game\+\_\+\+Loop} (int r=1, int c=1, int w=800, int h=600)
+\begin{DoxyCompactList}\small\item\em ! Constructor \hyperlink{classCanvas}{Canvas} \end{DoxyCompactList}\item 
+\hyperlink{classGame__Loop_a874fb59c1f7dc60273fc5541046838b9}{$\sim$\+Game\+\_\+\+Loop} ()
+\begin{DoxyCompactList}\small\item\em ! Destructors \hyperlink{classCanvas}{Canvas} \end{DoxyCompactList}\item 
+void \hyperlink{classGame__Loop_a637d18a3f2c22b5ecd4c3f1905e52b88}{initializer} (void)
+\begin{DoxyCompactList}\small\item\em ! Method to check if the param are and set \hyperlink{classMaze}{Maze} m to status default. \end{DoxyCompactList}\item 
+void \hyperlink{classGame__Loop_a549ad971281e15afa38a5dc204843891}{update} (void)
+\begin{DoxyCompactList}\small\item\em ! Method to make one move on build or solve if is not done.) \end{DoxyCompactList}\item 
+void \hyperlink{classGame__Loop_a5048bf3b3b18b529fe1e4a474282f274}{render} (void)
+\begin{DoxyCompactList}\small\item\em ! Method to render the maze in a image P\+NG on folder. \end{DoxyCompactList}\item 
+bool \hyperlink{classGame__Loop_a197233063165098c509b47d9b1da3a36}{done} (void)
+\begin{DoxyCompactList}\small\item\em ! Method to check if the maze is build, solve or did some error. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+{\bfseries Class} Game\+\_\+loop {\itshape Class to control output. input and end of game.} 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGame__Loop_a3aaa9f78b2e3bd3711a0552e161d94e4}\label{classGame__Loop_a3aaa9f78b2e3bd3711a0552e161d94e4}} 
+\index{Game\+\_\+\+Loop@{Game\+\_\+\+Loop}!Game\+\_\+\+Loop@{Game\+\_\+\+Loop}}
+\index{Game\+\_\+\+Loop@{Game\+\_\+\+Loop}!Game\+\_\+\+Loop@{Game\+\_\+\+Loop}}
+\subsubsection{\texorpdfstring{Game\+\_\+\+Loop()}{Game\_Loop()}}
+{\footnotesize\ttfamily Game\+\_\+\+Loop\+::\+Game\+\_\+\+Loop (\begin{DoxyParamCaption}\item[{int}]{r = {\ttfamily 1},  }\item[{int}]{c = {\ttfamily 1},  }\item[{int}]{w = {\ttfamily 800},  }\item[{int}]{h = {\ttfamily 600} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+! Constructor \hyperlink{classCanvas}{Canvas} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & r rows of maze \\
+\hline
+{\em int} & c colums of maze. \\
+\hline
+{\em int} & w Witdh of Image. \\
+\hline
+{\em int} & h Height of Image . \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+48                                                                   :
+49             rows\{r\}, cols\{c\}, width\{w\}, height\{h\}
+50         \{
+51             \hyperlink{classMaze}{Maze} m2(cols, rows);
+52             m = m2;
+53             \hyperlink{classBuild}{Build} b2( &m );
+54             \hyperlink{classSolve}{Solve} s2( &m );
+55             b = b2;
+56             s = s2;
+57         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classGame__Loop_a874fb59c1f7dc60273fc5541046838b9}\label{classGame__Loop_a874fb59c1f7dc60273fc5541046838b9}} 
+\index{Game\+\_\+\+Loop@{Game\+\_\+\+Loop}!````~Game\+\_\+\+Loop@{$\sim$\+Game\+\_\+\+Loop}}
+\index{````~Game\+\_\+\+Loop@{$\sim$\+Game\+\_\+\+Loop}!Game\+\_\+\+Loop@{Game\+\_\+\+Loop}}
+\subsubsection{\texorpdfstring{$\sim$\+Game\+\_\+\+Loop()}{~Game\_Loop()}}
+{\footnotesize\ttfamily Game\+\_\+\+Loop\+::$\sim$\+Game\+\_\+\+Loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+! Destructors \hyperlink{classCanvas}{Canvas} 
+
+
+\begin{DoxyCode}
+60 \{\}
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGame__Loop_a874fb59c1f7dc60273fc5541046838b9_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classGame__Loop_a197233063165098c509b47d9b1da3a36}\label{classGame__Loop_a197233063165098c509b47d9b1da3a36}} 
+\index{Game\+\_\+\+Loop@{Game\+\_\+\+Loop}!done@{done}}
+\index{done@{done}!Game\+\_\+\+Loop@{Game\+\_\+\+Loop}}
+\subsubsection{\texorpdfstring{done()}{done()}}
+{\footnotesize\ttfamily bool Game\+\_\+\+Loop\+::done (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+! Method to check if the maze is build, solve or did some error. 
+
+\begin{DoxyReturn}{Returns}
+True if is \hyperlink{classMaze}{Maze} Is \hyperlink{classBuild}{Build} and \hyperlink{classSolve}{Solve} or Happends any error Otherwise False. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+123 \{
+124 
+125     \textcolor{keywordflow}{if}( b.\hyperlink{classBuild_a72373ff38b0676c8f2c9f171c15333c4}{done}() && s.\hyperlink{classSolve_a868db181d288fdb10e5592b62e669c3b}{is\_done}() )
+126     \{
+127         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+128     \}
+129 
+130     \textcolor{keywordflow}{if}(break\_loop == \textcolor{keyword}{true})
+131     \{
+132         std::cout << \textcolor{stringliteral}{"wrong argument numbers\(\backslash\)n"};
+133         std::cout << \textcolor{stringliteral}{"One of argument are lower then configuration\(\backslash\)n"};
+134         std::cout << \textcolor{stringliteral}{"lower configuration (2x3) or (3x2) and (100x100)\(\backslash\)n"};
+135         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+136     \}
+137 
+138     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+139 
+140 \}
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGame__Loop_a197233063165098c509b47d9b1da3a36_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{classGame__Loop_a197233063165098c509b47d9b1da3a36_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classGame__Loop_a637d18a3f2c22b5ecd4c3f1905e52b88}\label{classGame__Loop_a637d18a3f2c22b5ecd4c3f1905e52b88}} 
+\index{Game\+\_\+\+Loop@{Game\+\_\+\+Loop}!initializer@{initializer}}
+\index{initializer@{initializer}!Game\+\_\+\+Loop@{Game\+\_\+\+Loop}}
+\subsubsection{\texorpdfstring{initializer()}{initializer()}}
+{\footnotesize\ttfamily void Game\+\_\+\+Loop\+::initializer (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+! Method to check if the param are and set \hyperlink{classMaze}{Maze} m to status default. 
+
+
+\begin{DoxyCode}
+5 \{
+6     \textcolor{comment}{// Set back\_track to true use back solve.}
+7     \textcolor{comment}{// set back\_track to false use hand solve.}
+8     back\_track = \textcolor{keyword}{false};
+9     \textcolor{keywordflow}{if}( rows * 8 > width || cols * 8 > height )
+10     \{
+11         std::cout << \textcolor{stringliteral}{"The Canvas Size is to short to Draw\(\backslash\)n"};
+12         break\_loop = \textcolor{keyword}{true};
+13     \}
+14     \textcolor{keywordflow}{if}(rows < 2 || cols < 2)
+15     \{
+16         std::cout << \textcolor{stringliteral}{"The Rows our Coluns is under the range"};
+17         break\_loop = \textcolor{keyword}{true};
+18     \}
+19 
+20     \textcolor{keywordflow}{if}(width < 100 || height < 100)
+21     \{
+22 
+23         std::cout << \textcolor{stringliteral}{"The width or he height is under the range"};
+24         break\_loop = \textcolor{keyword}{true};
+25     \}
+26     \textcolor{keywordflow}{if}(rows == 2 && cols == 2 )
+27     \{
+28 
+29         std::cout << \textcolor{stringliteral}{"The Rows and coluns are under the range"};
+30         break\_loop = \textcolor{keyword}{true};
+31     \}
+32     m.\hyperlink{classMaze_aa7c832a91a3db8f48b31f688332f8986}{set\_cell\_up}(0,0, \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1a31f57c97180bdc320a97370c71cf524a}{Maze::status\_cell::entrace});
+33     \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i\{0\}; i < rows; i++)
+34     \{
+35         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j\{0\}; j < cols; j++)
+36         \{
+37             m.\hyperlink{classMaze_aa7c832a91a3db8f48b31f688332f8986}{set\_cell\_up}( i,j, \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1ab28354b543375bfa94dabaeda722927f}{Maze::status\_cell::top} );
+38             m.\hyperlink{classMaze_aa7c832a91a3db8f48b31f688332f8986}{set\_cell\_up}( i,j, \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1a74e8333ad11685ff3bdae589c8f6e34d}{Maze::status\_cell::down} );
+39             m.\hyperlink{classMaze_aa7c832a91a3db8f48b31f688332f8986}{set\_cell\_up}( i,j, \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1a811882fecd5c7618d7099ebbd39ea254}{Maze::status\_cell::left} );
+40             m.\hyperlink{classMaze_aa7c832a91a3db8f48b31f688332f8986}{set\_cell\_up}( i,j, \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1a7c4f29407893c334a6cb7a87bf045c0d}{Maze::status\_cell::right} );
+41         \}
+42     \}
+43     m.\hyperlink{classMaze_aa7c832a91a3db8f48b31f688332f8986}{set\_cell\_up}(rows-1,cols-1, \hyperlink{classMaze_a07167e321eac2b67100fb82ecb98f1d1af24f62eeb789199b9b2e467df3b1876b}{Maze::status\_cell::exit});
+44 
+45     \hyperlink{classGame__Loop_a5048bf3b3b18b529fe1e4a474282f274}{render}();
+46     n\_pictures++;
+47     percent = 100.0/(cols*rows);
+48     std::cout << \textcolor{stringliteral}{"\(\backslash\)nBUILDING THE MAZE \(\backslash\)n"};
+49     std::cout << std::setprecision(4) << percent << \textcolor{stringliteral}{"%\(\backslash\)n"};
+50 \}
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGame__Loop_a637d18a3f2c22b5ecd4c3f1905e52b88_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGame__Loop_a637d18a3f2c22b5ecd4c3f1905e52b88_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classGame__Loop_a5048bf3b3b18b529fe1e4a474282f274}\label{classGame__Loop_a5048bf3b3b18b529fe1e4a474282f274}} 
+\index{Game\+\_\+\+Loop@{Game\+\_\+\+Loop}!render@{render}}
+\index{render@{render}!Game\+\_\+\+Loop@{Game\+\_\+\+Loop}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Game\+\_\+\+Loop\+::render (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+! Method to render the maze in a image P\+NG on folder. 
+
+
+\begin{DoxyCode}
+101 \{
+102 
+103     \hyperlink{classRender}{Render} rdr( &m, width , height);
+104     \textcolor{keywordflow}{if}( (!b.\hyperlink{classBuild_a72373ff38b0676c8f2c9f171c15333c4}{done}() || percent != 100) && printer == \textcolor{keyword}{false}  )
+105     \{   
+106             output = b\_string + std::to\_string(n\_pictures);
+107             rdr.draw(output);
+108     \}
+109 
+110     \textcolor{keywordflow}{if}( b.\hyperlink{classBuild_a72373ff38b0676c8f2c9f171c15333c4}{done}() && !s.\hyperlink{classSolve_a868db181d288fdb10e5592b62e669c3b}{is\_done}())
+111     \{
+112         output = s\_string + std::to\_string(trys);
+113         rdr.draw(output);
+114     \}
+115     \textcolor{keywordflow}{if}( b.\hyperlink{classBuild_a72373ff38b0676c8f2c9f171c15333c4}{done}() && s.\hyperlink{classSolve_a868db181d288fdb10e5592b62e669c3b}{is\_done}())
+116     \{
+117         output = s\_string + std::to\_string(trys);
+118         rdr.draw(output);
+119     \}
+120 \}
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGame__Loop_a5048bf3b3b18b529fe1e4a474282f274_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGame__Loop_a5048bf3b3b18b529fe1e4a474282f274_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classGame__Loop_a549ad971281e15afa38a5dc204843891}\label{classGame__Loop_a549ad971281e15afa38a5dc204843891}} 
+\index{Game\+\_\+\+Loop@{Game\+\_\+\+Loop}!update@{update}}
+\index{update@{update}!Game\+\_\+\+Loop@{Game\+\_\+\+Loop}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Game\+\_\+\+Loop\+::update (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+! Method to make one move on build or solve if is not done.) 
+
+
+\begin{DoxyCode}
+53 \{
+54     \textcolor{keywordflow}{if}(break\_loop == \textcolor{keyword}{false})
+55     \{
+56         \textcolor{keywordflow}{if}( !b.\hyperlink{classBuild_a72373ff38b0676c8f2c9f171c15333c4}{done}() && b.\hyperlink{classBuild_ada5111f265ee6a43832db25e8da9c3d0}{make}() )
+57         \{
+58             \hyperlink{classGame__Loop_a5048bf3b3b18b529fe1e4a474282f274}{render}();
+59 
+60             percent += 100.0/(cols*rows);
+61             std::cout << std::setprecision(4) << percent << \textcolor{stringliteral}{"%\(\backslash\)n"};
+62             n\_pictures++;
+63         \}
+64 
+65         \textcolor{keywordflow}{if}( b.\hyperlink{classBuild_a72373ff38b0676c8f2c9f171c15333c4}{done}())
+66         \{
+67             \textcolor{keywordflow}{if}(percent <= 99 && percent > 0)
+68             \{
+69                 std::cout << \textcolor{stringliteral}{"100%\(\backslash\)n"};
+70             \}
+71             \textcolor{keywordflow}{if}(percent > 0)
+72             \{
+73                 std::cout << \textcolor{stringliteral}{"\(\backslash\)nSOLVING THE MAZE \(\backslash\)n"};
+74                 percent = -1;
+75                 printer = \textcolor{keyword}{true};
+76             \}
+77         \}
+78 
+79         \textcolor{keywordflow}{if}( b.\hyperlink{classBuild_a72373ff38b0676c8f2c9f171c15333c4}{done}() && !s.\hyperlink{classSolve_a868db181d288fdb10e5592b62e669c3b}{is\_done}())
+80         \{
+81             \textcolor{keywordflow}{if}(back\_track == \textcolor{keyword}{true})
+82             \{
+83                 s.\hyperlink{classSolve_a8902b46862c7759928495e3684054f82}{move}();
+84                 std::cout << \textcolor{stringliteral}{"Solving Back "} << trys << \textcolor{stringliteral}{"Moves\(\backslash\)n"};
+85                 s\_string = s\_back\_string;
+86                 \hyperlink{classGame__Loop_a5048bf3b3b18b529fe1e4a474282f274}{render}();
+87                 trys++;
+88             \}\textcolor{keywordflow}{else}\{
+89                 \textcolor{keywordflow}{if}(s.\hyperlink{classSolve_a8226032eb1d4877539f417d4fab0efde}{move\_left}())
+90                 \{
+91                     std::cout << \textcolor{stringliteral}{"Solving Hand "} << trys << \textcolor{stringliteral}{"Moves\(\backslash\)n"};
+92                     s\_string = s\_hand\_string;
+93                     \hyperlink{classGame__Loop_a5048bf3b3b18b529fe1e4a474282f274}{render}();
+94                     trys++;
+95                 \}
+96             \}
+97         \}
+98     \}
+99 \}
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGame__Loop_a549ad971281e15afa38a5dc204843891_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGame__Loop_a549ad971281e15afa38a5dc204843891_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/bergony/lp\+\_\+magos/include/\hyperlink{game__loop_8h}{game\+\_\+loop.\+h}\item 
+/home/bergony/lp\+\_\+magos/src/\hyperlink{game__loop_8cpp}{game\+\_\+loop.\+cpp}\end{DoxyCompactItemize}

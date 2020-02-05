@@ -1,0 +1,12 @@
+<map id="/home/bergony/lp_magos/include/maze.h" name="/home/bergony/lp_magos/include/maze.h">
+<area shape="rect" id="node2" href="$render_8h.html" title="/home/bergony/lp_magos\l/include/render.h" alt="" coords="485,95,653,136"/>
+<area shape="rect" id="node7" href="$build_8h.html" title="/home/bergony/lp_magos\l/include/build.h" alt="" coords="101,95,269,136"/>
+<area shape="rect" id="node9" href="$solve_8h.html" title="/home/bergony/lp_magos\l/include/solve.h" alt="" coords="293,95,461,136"/>
+<area shape="rect" id="node11" href="$maze_8cpp.html" title="/home/bergony/lp_magos\l/src/maze.cpp" alt="" coords="677,95,845,136"/>
+<area shape="rect" id="node3" href="$game__loop_8h.html" title="/home/bergony/lp_magos\l/include/game_loop.h" alt="" coords="197,184,365,225"/>
+<area shape="rect" id="node6" href="$render_8cpp.html" title="/home/bergony/lp_magos\l/src/render.cpp" alt="" coords="581,184,749,225"/>
+<area shape="rect" id="node4" href="$main_8cpp.html" title="/home/bergony/lp_magos\l/src/main.cpp" alt="" coords="101,273,269,315"/>
+<area shape="rect" id="node5" href="$game__loop_8cpp.html" title="/home/bergony/lp_magos\l/src/game_loop.cpp" alt="" coords="293,273,461,315"/>
+<area shape="rect" id="node8" href="$build_8cpp.html" title="/home/bergony/lp_magos\l/src/build.cpp" alt="" coords="5,184,173,225"/>
+<area shape="rect" id="node10" href="$solve_8cpp.html" title="/home/bergony/lp_magos\l/src/solve.cpp" alt="" coords="389,184,557,225"/>
+</map>

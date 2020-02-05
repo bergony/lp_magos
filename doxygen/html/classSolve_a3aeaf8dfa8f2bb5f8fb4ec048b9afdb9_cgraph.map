@@ -1,0 +1,15 @@
+<map id="Solve::Solve" name="Solve::Solve">
+<area shape="rect" id="node2" href="$classSolve.html#a868db181d288fdb10e5592b62e669c3b" title="! Method to check if the maze is Done " alt="" coords="149,169,257,196"/>
+<area shape="rect" id="node12" href="$classSolve.html#a963b593c0311f03c7e4ce77eea818fa1" title="! Method to get with way de player_cell goes save on way stack " alt="" coords="501,333,613,360"/>
+<area shape="rect" id="node13" href="$classSolve.html#aaccff68d3e175f7400a9407077db7255" title="! Method to get numbers of posible ways " alt="" coords="481,435,632,461"/>
+<area shape="rect" id="node14" href="$classSolve.html#a8902b46862c7759928495e3684054f82" title="! Move to the next Cell. " alt="" coords="156,333,251,360"/>
+<area shape="rect" id="node3" href="$classMaze.html#a90f5c1c140a9991942204d4a7fec3bf8" title="Method to get numbers of cell. " alt="" coords="680,5,827,32"/>
+<area shape="rect" id="node4" href="$classMaze.html#aa7c832a91a3db8f48b31f688332f8986" title="Method to change bit corresponding status cell to one. " alt="" coords="305,169,433,196"/>
+<area shape="rect" id="node5" href="$classMaze.html#aa59b935dcd5f7129636cea6e40882c56" title="Method to find the cell on vector by coordinates( x, y). " alt="" coords="501,169,612,196"/>
+<area shape="rect" id="node6" href="$classMaze.html#ab86292a84aa56a26c4c07f4aa684d9bb" title="Method to change bit corresponding status cell to zero. " alt="" coords="681,232,826,259"/>
+<area shape="rect" id="node7" href="$classMaze.html#ae07191c6ec3cc47fce1147bc3f03a8ad" title="Method to see all status of cell. " alt="" coords="700,107,807,133"/>
+<area shape="rect" id="node8" href="$classMaze.html#a2b0e69e72d6c3e1037578f057946a21e" title="Method to check if the status cell sc is up. " alt="" coords="875,308,995,335"/>
+<area shape="rect" id="node9" href="$classMaze.html#a308fa695665de6217c0e7f28aab5adda" title="Method to check if the cell have be see. " alt="" coords="691,333,815,360"/>
+<area shape="rect" id="node10" href="$classMaze.html#a8a04cd1335e96a80358181afa164d4c9" title="Method to get numbers of colums. " alt="" coords="698,384,809,411"/>
+<area shape="rect" id="node11" href="$classMaze.html#ac786606a34632b2254b2d27d5f5f0f3f" title="Method to get numbers of rows. " alt="" coords="696,56,811,83"/>
+</map>
